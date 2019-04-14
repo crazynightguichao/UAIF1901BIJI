@@ -1,0 +1,742 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第2节：HTTP概述 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="数据获取.html" />
+    
+    
+    <link rel="prev" href="概述.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Python基础/">
+            
+                <a href="../Python基础/">
+            
+                    
+                    第一章 Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Python基础/概述.html">
+            
+                <a href="../Python基础/概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Python基础/Python定位应用.html">
+            
+                <a href="../Python基础/Python定位应用.html">
+            
+                    
+                    第2节：定位应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Python基础/开启虚拟环境.html">
+            
+                <a href="../Python基础/开启虚拟环境.html">
+            
+                    
+                    第3节：开启虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Python基础/pip（包管理工具操作）.html">
+            
+                <a href="../Python基础/pip（包管理工具操作）.html">
+            
+                    
+                    第4节：pip（包管理工具操作）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Python基础/输入输出测试工具.html">
+            
+                <a href="../Python基础/输入输出测试工具.html">
+            
+                    
+                    第5节：输入输出测试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Python基础/变量.html">
+            
+                <a href="../Python基础/变量.html">
+            
+                    
+                    第6节：变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Python基础/数据类型.html">
+            
+                <a href="../Python基础/数据类型.html">
+            
+                    
+                    第7节：数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Python基础/运算符.html">
+            
+                <a href="../Python基础/运算符.html">
+            
+                    
+                    第8节：运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Python基础/流程控制.html">
+            
+                <a href="../Python基础/流程控制.html">
+            
+                    
+                    第9节：流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Python基础/函数.html">
+            
+                <a href="../Python基础/函数.html">
+            
+                    
+                    第10节：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Python基础/常用系统内建函数.html">
+            
+                <a href="../Python基础/常用系统内建函数.html">
+            
+                    
+                    第11节：常用系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Python基础/面向对象OOP.html">
+            
+                <a href="../Python基础/面向对象OOP.html">
+            
+                    
+                    第12节：面向对象OOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Python基础/面向对象单例设计模式.html">
+            
+                <a href="../Python基础/面向对象单例设计模式.html">
+            
+                    
+                    第13节：面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Python基础/文件操作.html">
+            
+                <a href="../Python基础/文件操作.html">
+            
+                    
+                    第14节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Python基础/异常.html">
+            
+                <a href="../Python基础/异常.html">
+            
+                    
+                    第15节：异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../Python基础/with  上下文管理器.html">
+            
+                <a href="../Python基础/with  上下文管理器.html">
+            
+                    
+                    第16节：with  上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../Python基础/迭代器和生成器.html">
+            
+                <a href="../Python基础/迭代器和生成器.html">
+            
+                    
+                    第17节：迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../Python基础/模块与包（modules）.html">
+            
+                <a href="../Python基础/模块与包（modules）.html">
+            
+                    
+                    第18节：模块与包（modules）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第二章 Python网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="HTTP概述.html">
+            
+                <a href="HTTP概述.html">
+            
+                    
+                    第2节：HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="数据获取.html">
+            
+                <a href="数据获取.html">
+            
+                    
+                    第3节：数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="数据存储.html">
+            
+                <a href="数据存储.html">
+            
+                    
+                    第4节：数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="项目实战.html">
+            
+                <a href="项目实战.html">
+            
+                    
+                    第5节：项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Scrapy框架.html">
+            
+                <a href="Scrapy框架.html">
+            
+                    
+                    第6节：Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="常见反爬策略.html">
+            
+                <a href="常见反爬策略.html">
+            
+                    
+                    第7节：常见反爬策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="抓包工具.html">
+            
+                <a href="抓包工具.html">
+            
+                    
+                    第8节：抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="一些tip.html">
+            
+                <a href="一些tip.html">
+            
+                    
+                    第9节：一些tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python系统编程/">
+            
+                <a href="../python系统编程/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python系统编程/多进程多线程编程.html">
+            
+                <a href="../python系统编程/多进程多线程编程.html">
+            
+                    
+                    第1节：多进程多线程编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python系统编程/线程.html">
+            
+                <a href="../python系统编程/线程.html">
+            
+                    
+                    第2节：线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第2节：HTTP概述</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;2&#x8282;&#xFF1A;http&#x6982;&#x8FF0;">&#x7B2C;2&#x8282;&#xFF1A;HTTP&#x6982;&#x8FF0;</h1>
+<h2 id="http&#x534F;&#x8BAE;">http&#x534F;&#x8BAE;</h2>
+<p>HyperText Transfer Protocol, &#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</p>
+<h2 id="https">https</h2>
+<p>Hypertext Transfer Protocol over Secure Socket Layer
+HTTP&#x4E0B;&#x52A0;&#x5165;SSL&#x5C42;&#xFF0C;HTTPS&#x7684;&#x5B89;&#x5168;&#x57FA;&#x7840;&#x662F;SSL&#xFF0C;HTTPS&#x7684;&#x5B89;&#x5168;&#x57FA;&#x7840;&#x662F;SSL&#xFF0C;&#x56E0;&#x6B64;&#x52A0;&#x5BC6;&#x7684;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#x5C31;&#x9700;&#x8981;SSL&#x3002;</p>
+<h2 id="&#x533A;&#x522B;">&#x533A;&#x522B;</h2>
+<ul>
+<li>HTTPS&#x5B58;&#x5728;&#x4E0D;&#x540C;&#x4E8E;HTTP&#x7684;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53CA;&#x4E00;&#x4E2A;&#x52A0;&#x5BC6;/&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x5C42;&#xFF08;&#x5728;HTTP&#x4E0E;TCP&#x4E4B;&#x95F4;&#xFF09;</li>
+<li>HTTPS&#x5E7F;&#x6CDB;&#x7528;&#x4E8E;&#x4E07;&#x7EF4;&#x7F51;&#x4E0A;&#x5B89;&#x5168;&#x654F;&#x611F;&#x7684;&#x901A;&#x8BAF;&#xFF0C;&#x4F8B;&#x5982;&#x4EA4;&#x6613;&#x652F;&#x4ED8;&#x65B9;&#x9762;</li>
+<li>HTTP&#x7AEF;&#x53E3;&#x53F7;&#xFF1A;80&#xFF1B;HTTPS&#x7AEF;&#x53E3;&#x53F7;&#xFF1A;443<h2 id="&#x5BA2;&#x6237;&#x7AEF;http&#x8BF7;&#x6C42;&#xFF08;&#x5E26;&#x4E0A;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x8BC1;&#x660E;&#xFF09;">&#x5BA2;&#x6237;&#x7AEF;HTTP&#x8BF7;&#x6C42;&#xFF08;&#x5E26;&#x4E0A;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x8BC1;&#x660E;&#xFF09;</h2>
+&#x5148;&#x8BF7;&#x6C42;DNS&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x628A;ip&#x5730;&#x5740;&#x8BF7;&#x6C42;&#x5230;&#xFF0C;&#x624D;&#x80FD;&#x77E5;&#x9053;&#x8BF7;&#x6C42;&#x7684;&#x662F;&#x54EA;&#x53F0;&#x7535;&#x8111;
+&#x8FD8;&#x8981;&#x5E26;&#x4E0A;&#x4E00;&#x4E9B;&#x8BF7;&#x6C42;&#x5934;</li>
+<li>&#x8BF7;&#x6C42;&#x62A5;&#x5934;(&#x5BA2;&#x6237;&#x7AEF;&#x5E26;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x7ED9;&#x670D;&#x52A1;&#x5668;)</li>
+<li>Host&#xFF08;&#x4E3B;&#x673A;&#x548C;&#x7AEF;&#x53E3;&#x53F7;&#xFF09;
+  <a href="http://118.190.150.35:9000/login" target="_blank">http://118.190.150.35:9000/login</a></li>
+<li>Connect&#xFF08;&#x94FE;&#x63A5;&#x7C7B;&#x578B;&#xFF09;&#xFF1A;keep alive &#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x53BB;&#x8BF7;&#x6C42;</li>
+<li><p>User-Agent&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x540D;&#x79F0;&#xFF09;
+  &#x4F7F;&#x7528;fake_useragent&#x5305;</p>
+<pre><code>  from fake_useragent import UserAgent
+
+  ua = UserAgent()      # &#x5B9E;&#x4F8B;&#x5316;&#x51FA;&#x6765;
+  headers={
+  &quot;User-Agent&quot; :ua.random
+  }
+</code></pre></li>
+<li><p>Accept&#xFF08;&#x63A5;&#x6536;&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF09;</p>
+<pre><code>  */* &#x4EC0;&#x4E48;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x6536;
+  image/gif &#x5E0C;&#x671B;&#x63A5;&#x6536;GIF&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x7684;&#x8D44;&#x6E90;
+  text/html &#x8868;&#x660E;&#x5BA2;&#x6237;&#x7AEF;&#x5E0C;&#x671B;&#x63A5;&#x6536;html
+  text/html,application/xhtml+xml;q=9,image/*;q=0.8
+  &#x652F;&#x6301;html&#x6587;&#x672C;&#x3001;xhtml&#x548C;xml&#x6587;&#x6863;&#x3001;&#x6240;&#x6709;&#x7684;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x8D44;&#x6E90;&#xFF0C;q&#x4E3A;&#x6743;&#x91CD;(0&lt;=q&lt;=1)&#x9ED8;&#x8BA4;&#x4E3A;1&#xFF08;&#x89C4;&#x5B9A;&#x5206;&#x53F7;&#x524D;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF09;&#xFF0C;&#x8D8A;&#x9760;&#x8FD1;1&#x8868;&#x793A;&#x8D8A;&#x5E0C;&#x671B;&quot;;&quot;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4E3A;0 &#x4E0D;&#x5E0C;&#x671B;&#x7684;&#x7C7B;&#x578B;
+</code></pre></li>
+<li>Referer&#xFF08;&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x5904;&#xFF09;
+  &#x8868;&#x660E;&#x4EA7;&#x751F;&#x8BF7;&#x6C42;&#x7684;&#x7F51;&#x9875;&#x6765;&#x81EA;&#x4E8E;&#x54EA;&#x4E2A;URL</li>
+<li>Accept-Encoding&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x63A5;&#x53D7;&#x6587;&#x4EF6;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF09;</li>
+<li>Accept-Language&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x63A5;&#x53D7;&#x8BED;&#x8A00;&#x79CD;&#x7C7B;&#xFF09;</li>
+<li>Accept-Charset&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x63A5;&#x53D7;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF09;</li>
+<li>Cookie&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x672C;&#x5730;Application&#x4E2D;&#xFF09;</li>
+<li>Content-Type&#xFF08;POST&#x8BF7;&#x6C42;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF09;</li>
+<li>&#x54CD;&#x5E94;&#x62A5;&#x5934;</li>
+<li>Cache-Control&#xFF1A;must-revalidate&#xFF0C;no-cache&#xFF0C;private
+  &#x670D;&#x52A1;&#x5668;&#x4E0D;&#x5E0C;&#x671B;&#x5BA2;&#x6237;&#x7AEF;&#x7F13;&#x5B58;&#x8D44;&#x6E90;&#xFF0C;&#x4E0B;&#x6B21;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x8BF7;&#x6C42;
+  Cache-Control&#xFF1A;max-age=86400
+  &#x5728;86400&#x79D2;&#x7684;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x8BFB;&#x53D6;&#x8D44;&#x6E90;</li>
+<li>Connection&#xFF1A;keep-alive
+  &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7684;tcp&#x8FDE;&#x63A5;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;tcp&#x94FE;&#x63A5;&#x53D1;&#x9001;http&#x8BF7;&#x6C42;</li>
+<li>Content-Encodeing&#xFF1A;gzip
+  &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8D44;&#x6E90;&#x65F6;&#x91C7;&#x7528;gzip&#x7F16;&#x7801;&#x7684;</li>
+<li>Content-Type&#xFF1A;text/html;charset=UTF-8
+  &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x8FD8;&#x6709;&#x5B57;&#x7B26;&#x7F16;&#x7801;</li>
+<li>Date&#xFF1A;Sun&#xFF0C;21 Sep
+  &#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8D44;&#x6E90;&#x65F6;&#x95F4;</li>
+<li>Expires:Sun...
+  &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7F13;&#x5B58;&#x526F;&#x672C;</li>
+<li>Pragma&#xFF1A;no-cache&#x4E0E;Cache-Control</li>
+<li>Server &#x670D;&#x52A1;&#x5668;&#x4FE1;&#x606F;</li>
+<li>Transfer-Encoding:chunked
+  &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x7684;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5206;&#x5757;&#x53D1;&#x9001;&#x7684;</li>
+<li>Vary&#xFF1A;Accept--Encoding
+  &#x544A;&#x8BC9;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7F13;&#x5B58;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x8FD8;&#x662F;&#x975E;&#x538B;&#x7F29;&#x6587;&#x4EF6;</li>
+<li>&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;<ul>
+<li>100~199  &#x670D;&#x52A1;&#x5668;&#x6210;&#x529F;&#x63A5;&#x6536;&#x90E8;&#x5206;&#x8BF7;&#x6C42;&#xFF0C;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x7EE7;&#x7EED;&#x63D0;&#x4EA4;&#x5176;&#x4F59;&#x8BF7;&#x6C42;</li>
+<li>200~299  &#x670D;&#x52A1;&#x5668;&#x6210;&#x529F;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x5E76;&#x5DF2;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x5904;&#x7406;&#x8FC7;&#x7A0B;</li>
+<li>200  &#x8BF7;&#x6C42;&#x6210;&#x529F;</li>
+<li>300~399  &#x4E3A;&#x5B8C;&#x6210;&#x8BF7;&#x6C42;&#xFF0C;&#x5BA2;&#x6237;&#x9700;&#x8981;&#x8FDB;&#x4E00;&#x6B65;&#x7EC6;&#x5316;&#x8BF7;&#x6C42;</li>
+<li>307  304   &#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x8D44;&#x6E90;</li>
+<li>400~499 &#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x6709;&#x9519;&#x8BEF;</li>
+<li>404  &#x65E0;&#x6CD5;&#x627E;&#x5230;&#x9875;&#x9762;</li>
+<li>403  &#x670D;&#x52A1;&#x5668;&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;</li>
+<li>500~599  &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x51FA;&#x73B0;&#x9519;&#x8BEF;</li>
+<li>500  &#x8BF7;&#x6C42;&#x672A;&#x5B8C;&#x6210;</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="概述.html" class="navigation navigation-prev " aria-label="Previous page: 第1节：概述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="数据获取.html" class="navigation navigation-next " aria-label="Next page: 第3节：数据获取">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第2节：HTTP概述","level":"1.3.2","depth":2,"next":{"title":"第3节：数据获取","level":"1.3.3","depth":2,"path":"Python网络爬虫/数据获取.md","ref":"Python网络爬虫/数据获取.md","articles":[]},"previous":{"title":"第1节：概述","level":"1.3.1","depth":2,"path":"Python网络爬虫/概述.md","ref":"Python网络爬虫/概述.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Python网络爬虫/HTTP概述.md","mtime":"2019-04-14T09:04:11.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T15:00:50.504Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

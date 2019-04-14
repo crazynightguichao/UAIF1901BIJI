@@ -1,0 +1,1040 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第7节：数据类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="运算符.html" />
+    
+    
+    <link rel="prev" href="变量.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python定位应用.html">
+            
+                <a href="Python定位应用.html">
+            
+                    
+                    第2节：定位应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="开启虚拟环境.html">
+            
+                <a href="开启虚拟环境.html">
+            
+                    
+                    第3节：开启虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="pip（包管理工具操作）.html">
+            
+                <a href="pip（包管理工具操作）.html">
+            
+                    
+                    第4节：pip（包管理工具操作）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="输入输出测试工具.html">
+            
+                <a href="输入输出测试工具.html">
+            
+                    
+                    第5节：输入输出测试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="变量.html">
+            
+                <a href="变量.html">
+            
+                    
+                    第6节：变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    第7节：数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="运算符.html">
+            
+                <a href="运算符.html">
+            
+                    
+                    第8节：运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="流程控制.html">
+            
+                <a href="流程控制.html">
+            
+                    
+                    第9节：流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    第10节：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="常用系统内建函数.html">
+            
+                <a href="常用系统内建函数.html">
+            
+                    
+                    第11节：常用系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="面向对象OOP.html">
+            
+                <a href="面向对象OOP.html">
+            
+                    
+                    第12节：面向对象OOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="面向对象单例设计模式.html">
+            
+                <a href="面向对象单例设计模式.html">
+            
+                    
+                    第13节：面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="文件操作.html">
+            
+                <a href="文件操作.html">
+            
+                    
+                    第14节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="异常.html">
+            
+                <a href="异常.html">
+            
+                    
+                    第15节：异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="with  上下文管理器.html">
+            
+                <a href="with  上下文管理器.html">
+            
+                    
+                    第16节：with  上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="迭代器和生成器.html">
+            
+                <a href="迭代器和生成器.html">
+            
+                    
+                    第17节：迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="模块与包（modules）.html">
+            
+                <a href="模块与包（modules）.html">
+            
+                    
+                    第18节：模块与包（modules）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Python网络爬虫/">
+            
+                <a href="../Python网络爬虫/">
+            
+                    
+                    第二章 Python网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Python网络爬虫/概述.html">
+            
+                <a href="../Python网络爬虫/概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Python网络爬虫/HTTP概述.html">
+            
+                <a href="../Python网络爬虫/HTTP概述.html">
+            
+                    
+                    第2节：HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Python网络爬虫/数据获取.html">
+            
+                <a href="../Python网络爬虫/数据获取.html">
+            
+                    
+                    第3节：数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Python网络爬虫/数据存储.html">
+            
+                <a href="../Python网络爬虫/数据存储.html">
+            
+                    
+                    第4节：数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Python网络爬虫/项目实战.html">
+            
+                <a href="../Python网络爬虫/项目实战.html">
+            
+                    
+                    第5节：项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Python网络爬虫/Scrapy框架.html">
+            
+                <a href="../Python网络爬虫/Scrapy框架.html">
+            
+                    
+                    第6节：Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Python网络爬虫/常见反爬策略.html">
+            
+                <a href="../Python网络爬虫/常见反爬策略.html">
+            
+                    
+                    第7节：常见反爬策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Python网络爬虫/抓包工具.html">
+            
+                <a href="../Python网络爬虫/抓包工具.html">
+            
+                    
+                    第8节：抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Python网络爬虫/一些tip.html">
+            
+                <a href="../Python网络爬虫/一些tip.html">
+            
+                    
+                    第9节：一些tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python系统编程/">
+            
+                <a href="../python系统编程/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python系统编程/多进程多线程编程.html">
+            
+                <a href="../python系统编程/多进程多线程编程.html">
+            
+                    
+                    第1节：多进程多线程编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python系统编程/线程.html">
+            
+                <a href="../python系统编程/线程.html">
+            
+                    
+                    第2节：线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第7节：数据类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;7&#x8282;&#xFF1A;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x7B2C;7&#x8282;&#xFF1A;&#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
+<h2 id="js&#x4E0E;python&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x6BD4;">js&#x4E0E;python&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x6BD4;</h2>
+<pre><code>js&#xFF1A;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;boolean&#x3001;null&#x3001;undefined&#xFF08;&#x58F0;&#x660E;&#x672A;&#x5B9A;&#x4E49;&#xFF09;&#x3001;object
+python&#xFF1A;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5E03;&#x5C14;&#x3001;null&#x3001;&#x5217;&#x8868;&#xFF08;&#x6570;&#x7EC4;&#xFF09;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#xFF08;object\json&#xFF09;&#x96C6;&#x5408;
+
+js&#x5206;&#x7C7B;&#xFF1A;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;
+python&#x5206;&#x7C7B;&#xFF1A;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;&#x5168;&#x90E8;&#x662F;&#x5F15;&#x7528;&#x7684;&#xFF09;
+
+&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;&#x5217;&#x8868;&#x3001;&#x5B57;&#x5178;&#x3001;&#x96C6;&#x5408;  &#x5176;&#x4F59;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;
+</code></pre><h2 id="&#x5E03;&#x5C14;&#x578B;boolean">&#x5E03;&#x5C14;&#x578B;boolean</h2>
+<pre><code>&#x975E;&#x7A7A;&#x975E;0&#x4E3A;&#x771F;&#xFF0C;0&#x6216;None&#x4E3A;&#x5047;
+Ture   False
+</code></pre><h2 id="&#x6570;&#x5B57;&#x578B;number">&#x6570;&#x5B57;&#x578B;number</h2>
+<pre><code>1.&#x6574;&#x6570;int
+&#x6574;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C;&#x53D6;&#x51B3;&#x4E8E;&#x7535;&#x8111;&#x5185;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x6CA1;&#x6709;&#x4E0A;&#x9650;
+
+2.&#x6D6E;&#x70B9;&#x6570;float
+&#x53EA;&#x8981;&#x6709;&#x5C0F;&#x6570;&#x70B9;&#x5C31;&#x662F;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x65E0;&#x7A77;&#x5C0F;&#x6570;&#x4F1A;&#x505A;&#x7CBE;&#x5EA6;&#x7684;&#x5904;&#x7406;&#xFF08;&#x9664;&#x8FD0;&#x7B97;&#x4E5F;&#x4F1A;&#x505A;&#x7CBE;&#x5EA6;&#x7684;&#x5904;&#x7406;&#xFF09;
+    0.1
+    5.0
+
+&#x6570;&#x5B57;&#x7CBE;&#x5EA6;&#xFF1A;&#x5185;&#x5EFA;&#x51FD;&#x6570;&#x3001;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x63A7;&#x5236;&#x5C0F;&#x6570;&#x7CBE;&#x5EA6;&#xFF09;
+
+3.&#x8D1F;&#x6570;
+
+4.&#x5206;&#x6570;
+</code></pre><h2 id="&#x5B57;&#x7B26;&#x4E32;-str">&#x5B57;&#x7B26;&#x4E32; str</h2>
+<h4 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h4>
+<pre><code>1&#x3001;&#x5355;&#x5F15;&#x53F7;
+2&#x3001;&#x53CC;&#x5F15;&#x53F7;
+    &#x6362;&#x884C;&#x7684;&#x65F6;&#x5019;&#x52A0; \
+3&#x3001;&#x4E09;&#x5F15;&#x53F7;
+    &#x4E09;&#x5F15;&#x53F7;&apos;&apos;&apos;&apos;&apos;&apos;(&#x652F;&#x6301;&#x6362;&#x884C;&#x3001;&#x5757;&#x7EA7;&#x6CE8;&#x91CA;) &quot;&quot;&quot;&quot;&quot;&quot;&quot;(&#x6CE8;&#x91CA;)
+</code></pre><h4 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h4>
+<pre><code>&#x53EA;&#x8981;&#x662F;&#x7528;&#x5F15;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x5C31;&#x662F;&#x5B57;&#x7B26;&#x4E32;
+python&#x4E0D;&#x533A;&#x5206;&#x5B57;&#x7B26;&#x548C;&#x5B57;&#x7B26;&#x4E32;
+&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;
+</code></pre><h4 id="&#x5EF6;&#x5C55;">&#x5EF6;&#x5C55;</h4>
+<pre><code>&#x8F6C;&#x4E49;&#x5B57;&#x7B26;  &#x201C;\&#x201D;
+&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x65F6;&#x5C31;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;
+&#x5E38;&#x7528;&#x7684;&#x8F6C;&#x79FB;&#x5B57;&#x7B26;&#xFF1A;\n   \t  \r  \*  \\
+&#x5B57;&#x7B26;&#x7F16;&#x7801;
+    ASCII
+        &#x8D77;&#x6E90;&#x4E8E;&#x7F8E;&#x56FD;&#xFF0C;&#x4E3B;&#x8981;&#x5BF9;&#x82F1;&#x6587;&#x8FDB;&#x884C;&#x7F16;&#x7801;
+    GBK&#xFF1A;&#x4E2D;&#x56FD;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;
+    Unicode&#xFF1A;&#x4E07;&#x56FD;&#x7801;
+    utf-8&#xFF1A;&#x66F4;&#x7CBE;&#x786E;&#x7684;&#x4E07;&#x56FD;&#x7801;
+&#x524D;&#x7F00;
+    r&#x201C;str&#x201D;r&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x666E;&#x901A;&#x5B57;&#x7B26;&#x4E32;
+    b&#x201C;str&#x201D;b&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;bytes&#x683C;&#x5F0F;
+    u&#x201C;str&#x201D;u&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;Unicode&#x683C;&#x5F0F;
+</code></pre><h4 id="&#x91CD;&#x8981;&#x7528;&#x6CD5;">&#x91CD;&#x8981;&#x7528;&#x6CD5;</h4>
+<pre><code>&#x5207;&#x7247;(&#x622A;&#x53D6;)
+&#x5207;&#x7247;&#x529F;&#x80FD;
+
+a = &quot;&#x5C71;&#x897F;&#x4F18;&#x9038;&#x5BA2;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&quot;
+print(a[2:5])
+&#x5207;&#x7247;&#x8BED;&#x6CD5;   string[start:end:step]  [&#x521D;&#x59CB;&#x503C;&#xFF1A;&#x7ED3;&#x675F;&#x503C;&#xFF1A;&#x6B65;&#x8FDB;&#x503C;]  &#x6240;&#x6709;&#x7684;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x662F;&#x8D1F;&#x503C;&#x6216;&#x7A7A; 
+&#x9ED8;&#x8BA4;:start == 0&#xFF08;&#x524D;&#x5F00;&#x59CB;&#x3001;&#x540E;&#x5F00;&#x59CB;&#xFF09;  end == &#x7ED3;&#x5C3E;&#xFF08;&#x524D;&#x7ED3;&#x5C3E;&#x3001;&#x540E;&#x7ED3;&#x5C3E;&#xFF09; step == 1 &#x5982;&#x679C;&#x4E3A;-1,&#x5C31;&#x662F;&#x6539;&#x53D8;&#x65B9;&#x5411;
+
+print(a[-1])
+print(a[-2:])
+print(dir(a))
+&#x6A21;&#x4EFF;&#x65B9;&#x6CD5;&#xFF08;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#xFF09;  &#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5EFA;&#x51FD;&#x6570;&#xFF08;&#x65B9;&#x6CD5;&#xFF09;&#x81EA;&#x5DF1;&#x7EC3;&#x4E60;
+</code></pre><h4 id="&#x5B57;&#x7B26;&#x4E32;&#x9AD8;&#x7EA7;">&#x5B57;&#x7B26;&#x4E32;&#x9AD8;&#x7EA7;</h4>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x952E;&#x51FD;&#x6570;  print&#xFF08;dir&#xFF08;aa&#xFF09;&#xFF09;
+&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF08;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x53CC;&#x524D;&#x540E;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x65B9;&#x6CD5;&#x79F0;&#x4E3A;&#x6A21;&#x677F;&#x65B9;&#x6CD5;&#xFF08;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x628A;&#x5176;&#x4F59;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5EFA;&#x51FD;&#x6570;&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#xFF09;&#x7EC3;&#x4E60;&#x4E00;&#x4E0B;&#x3002;</p>
+<pre><code>string.capitalize() &#x628A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5927;&#x5199;
+string.center(width) &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x539F;&#x5B57;&#x7B26;&#x4E32;&#x5C45;&#x4E2D;,&#x5E76;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x586B;&#x5145;&#x81F3;&#x957F;&#x5EA6; width &#x7684;&#x65B0;&#x5B57;&#x7B26;&#x4E32;
+string.count(str, beg=0, end=len(string)) &#x8FD4;&#x56DE; str &#x5728; string &#x91CC;&#x9762;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5982;&#x679C; beg &#x6216;&#x8005; end &#x6307;&#x5B9A;&#x5219;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185; str &#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;
+string.decode(encoding=&apos;UTF-8&apos;, errors=&apos;strict&apos;) &#x4EE5; encoding &#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#x89E3;&#x7801; string&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x9519;&#x9ED8;&#x8BA4;&#x62A5;&#x4E00;&#x4E2A; ValueError &#x7684; &#x5F02; &#x5E38; &#xFF0C; &#x9664;&#x975E; errors &#x6307; &#x5B9A; &#x7684; &#x662F; &apos;ignore&apos; &#x6216; &#x8005;&apos;replace&apos;
+string.encode(encoding=&apos;UTF-8&apos;, errors=&apos;strict&apos;) &#x4EE5; encoding &#x6307;&#x5B9A;&#x7684;&#x7F16;&#x7801;&#x683C;&#x5F0F;&#x7F16;&#x7801; string&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x9519;&#x9ED8;&#x8BA4;&#x62A5;&#x4E00;&#x4E2A;ValueError &#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x9664;&#x975E; errors &#x6307;&#x5B9A;&#x7684;&#x662F;&apos;ignore&apos;&#x6216;&#x8005;&apos;replace&apos;
+string.endswith(obj, beg=0, end=len(string)) &#x68C0;&#x67E5;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4EE5; obj &#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x679C;beg &#x6216;&#x8005; end &#x6307;&#x5B9A;&#x5219;&#x68C0;&#x67E5;&#x6307;&#x5B9A;&#x7684;&#x8303;&#x56F4;&#x5185;&#x662F;&#x5426;&#x4EE5; obj &#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x8FD4;&#x56DE; True,&#x5426;&#x5219;&#x8FD4;&#x56DE; False.
+string.expandtabs(tabsize=8) &#x628A;&#x5B57;&#x7B26;&#x4E32; string &#x4E2D;&#x7684; tab &#x7B26;&#x53F7;&#x8F6C;&#x4E3A;&#x7A7A;&#x683C;&#xFF0C;tab &#x7B26;&#x53F7;&#x9ED8;&#x8BA4;&#x7684;&#x7A7A;&#x683C;&#x6570;&#x662F; 8&#x3002;
+string.find(str, beg=0, end=len(string)) &#x68C0;&#x6D4B; str &#x662F;&#x5426;&#x5305;&#x542B;&#x5728; string &#x4E2D;&#xFF0C;&#x5982;&#x679C; beg &#x548C; end &#x6307;&#x5B9A;&#x8303;&#x56F4;&#xFF0C;&#x5219;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5305;&#x542B;&#x5728;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x8FD4;&#x56DE;&#x5F00;&#x59CB;&#x7684;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;-1
+string.format() &#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;
+string.index(str, beg=0, end=len(string)) &#x8DDF;find()&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5982;&#x679C;str&#x4E0D;&#x5728; string&#x4E2D;&#x4F1A;&#x62A5;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;.
+string.isalnum() &#x5982;&#x679C; string &#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x90FD;&#x662F;&#x5B57;&#x6BCD;&#x6216;&#x6570;&#x5B57;&#x5219;&#x8FD4;&#x56DE; True,&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.isalpha() &#x5982;&#x679C; string &#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x90FD;&#x662F;&#x5B57;&#x6BCD;&#x5219;&#x8FD4;&#x56DE; True,&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.isdecimal() &#x5982;&#x679C; string &#x53EA;&#x5305;&#x542B;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x5B57;&#x5219;&#x8FD4;&#x56DE; True &#x5426;&#x5219;&#x8FD4;&#x56DE; False.
+string.isdigit() &#x5982;&#x679C; string &#x53EA;&#x5305;&#x542B;&#x6570;&#x5B57;&#x5219;&#x8FD4;&#x56DE; True &#x5426;&#x5219;&#x8FD4;&#x56DE; False.
+string.islower() &#x5982;&#x679C; string &#x4E2D;&#x5305;&#x542B;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x8FD9;&#x4E9B;(&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;)&#x5B57;&#x7B26;&#x90FD;&#x662F;&#x5C0F;&#x5199;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.isnumeric() &#x5982;&#x679C; string &#x4E2D;&#x53EA;&#x5305;&#x542B;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.isspace() &#x5982;&#x679C; string &#x4E2D;&#x53EA;&#x5305;&#x542B;&#x7A7A;&#x683C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False.
+string.istitle() &#x5982;&#x679C; string &#x662F;&#x6807;&#x9898;&#x5316;&#x7684;(&#x89C1; title())&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.isupper() &#x5982;&#x679C; string &#x4E2D;&#x5305;&#x542B;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x8FD9;&#x4E9B;(&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;)&#x5B57;&#x7B26;&#x90FD;&#x662F;&#x5927;&#x5199;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False
+string.join(seq) &#x4EE5; string &#x4F5C;&#x4E3A;&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x5C06; seq &#x4E2D;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;(&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;)&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+string.ljust(width) &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x539F;&#x5B57;&#x7B26;&#x4E32;&#x5DE6;&#x5BF9;&#x9F50;,&#x5E76;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x586B;&#x5145;&#x81F3;&#x957F;&#x5EA6; width &#x7684;&#x65B0;&#x5B57;&#x7B26;&#x4E32;
+string.lower() &#x8F6C;&#x6362; string &#x4E2D;&#x6240;&#x6709;&#x5927;&#x5199;&#x5B57;&#x7B26;&#x4E3A;&#x5C0F;&#x5199;.
+string.lstrip() &#x622A;&#x6389; string &#x5DE6;&#x8FB9;&#x7684;&#x7A7A;&#x683C;
+string.maketrans(intab, outtab)
+maketrans() &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x6620;&#x5C04;&#x7684;&#x8F6C;&#x6362;&#x8868;&#xFF0C;&#x5BF9;&#x4E8E;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x6700;&#x7B80;&#x5355;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E5F;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#x8F6C;&#x6362;&#x7684;&#x76EE;&#x6807;&#x3002;
+max(str) &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32; str &#x4E2D;&#x6700;&#x5927;&#x7684;&#x5B57;&#x6BCD;&#x3002;
+min(str) &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32; str &#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x5B57;&#x6BCD;&#x3002;
+string.partition(str) &#x6709;&#x70B9;&#x50CF; find()&#x548C; split()&#x7684;&#x7ED3;&#x5408;&#x4F53;,&#x4ECE; str &#x51FA;&#x73B0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x8D77;,&#x628A; &#x5B57; &#x7B26; &#x4E32; string &#x5206; &#x6210; &#x4E00; &#x4E2A; 3 &#x5143; &#x7D20; &#x7684; &#x5143; &#x7EC4; (string_pre_str,str,string_post_str),&#x5982;&#x679C; string &#x4E2D;&#x4E0D;&#x5305;&#x542B;str &#x5219; string_pre_str == string.
+string.replace(str1, str2,  num=string.count(str1)) &#x628A; string &#x4E2D;&#x7684; str1 &#x66FF;&#x6362;&#x6210; str2,&#x5982;&#x679C; num &#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x66FF;&#x6362;&#x4E0D;&#x8D85;&#x8FC7; num &#x6B21;.
+string.rfind(str, beg=0,end=len(string) ) &#x7C7B;&#x4F3C;&#x4E8E; find()&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x4ECE;&#x53F3;&#x8FB9;&#x5F00;&#x59CB;&#x67E5;&#x627E;.
+string.rindex( str, beg=0,end=len(string)) &#x7C7B;&#x4F3C;&#x4E8E; index()&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x4ECE;&#x53F3;&#x8FB9;&#x5F00;&#x59CB;.
+string.rjust(width) &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x539F;&#x5B57;&#x7B26;&#x4E32;&#x53F3;&#x5BF9;&#x9F50;,&#x5E76;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x586B;&#x5145;&#x81F3;&#x957F;&#x5EA6; width &#x7684;&#x65B0;&#x5B57;&#x7B26;&#x4E32;
+string.rpartition(str) &#x7C7B;&#x4F3C;&#x4E8E; partition()&#x51FD;&#x6570;,&#x4E0D;&#x8FC7;&#x662F;&#x4ECE;&#x53F3;&#x8FB9;&#x5F00;&#x59CB;&#x67E5;&#x627E;
+string.rstrip() &#x5220;&#x9664; string &#x5B57;&#x7B26;&#x4E32;&#x672B;&#x5C3E;&#x7684;&#x7A7A;&#x683C;.
+string.split(str=&quot;&quot;, num=string.count(str)) &#x4EE5; str &#x4E3A;&#x5206;&#x9694;&#x7B26;&#x5207;&#x7247; string&#xFF0C;&#x5982;&#x679C; num &#x6709;&#x6307;&#x5B9A;&#x503C;&#xFF0C;&#x5219;&#x4EC5;&#x5206;&#x9694; num+ &#x4E2A;&#x5B50;&#x5B57;&#x7B26;&#x4E32;
+string.splitlines([keepends]) &#x6309;&#x7167;&#x884C;(&apos;\r&apos;, &apos;\r\n&apos;, \n&apos;)&#x5206;&#x9694;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5404;&#x884C;&#x4F5C;&#x4E3A;&#x5143;&#x7D20;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x6570; keepends &#x4E3A; False&#xFF0C;&#x4E0D;&#x5305;&#x542B;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x5982;&#x679C;&#x4E3A; True&#xFF0C;&#x5219;&#x4FDD;&#x7559;&#x6362;&#x884C;&#x7B26;&#x3002;
+string.startswith(obj, beg=0,end=len(string)) &#x68C0;&#x67E5;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x662F;&#x4EE5; obj &#x5F00;&#x5934;&#xFF0C;&#x662F;&#x5219;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False&#x3002;&#x5982;&#x679C;beg &#x548C; end &#x6307;&#x5B9A;&#x503C;&#xFF0C;&#x5219;&#x5728;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x68C0;&#x67E5;.
+string.strip([obj]) &#x5728; string &#x4E0A;&#x6267;&#x884C; lstrip()&#x548C; rstrip()
+string.swapcase() &#x7FFB;&#x8F6C; string &#x4E2D;&#x7684;&#x5927;&#x5C0F;&#x5199;
+string.title() &#x8FD4;&#x56DE;&quot;&#x6807;&#x9898;&#x5316;&quot;&#x7684; string,&#x5C31;&#x662F;&#x8BF4;&#x6240;&#x6709;&#x5355;&#x8BCD;&#x90FD;&#x662F;&#x4EE5;&#x5927;&#x5199;&#x5F00;&#x59CB;&#xFF0C;&#x5176;&#x4F59;&#x5B57;&#x6BCD;&#x5747;&#x4E3A;&#x5C0F;&#x5199;(&#x89C1; istitle())
+string.translate(str, del=&quot;&quot;) &#x6839;&#x636E; str &#x7ED9;&#x51FA;&#x7684;&#x8868;(&#x5305;&#x542B; 256 &#x4E2A;&#x5B57;&#x7B26;)&#x8F6C;&#x6362; string &#x7684;&#x5B57;&#x7B26;,&#x8981;&#x8FC7;&#x6EE4;&#x6389;&#x7684;&#x5B57;&#x7B26;&#x653E;&#x5230; del &#x53C2;&#x6570;&#x4E2D;
+string.upper() &#x8F6C;&#x6362; string &#x4E2D;&#x7684;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x4E3A;&#x5927;&#x5199;
+string.zfill(width) &#x8FD4;&#x56DE;&#x957F;&#x5EA6;&#x4E3A; width &#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x539F;&#x5B57;&#x7B26;&#x4E32; string &#x53F3;&#x5BF9;&#x9F50;&#xFF0C;&#x524D;&#x9762;&#x586B;&#x5145;0
+</code></pre><h2 id="none">None</h2>
+<h2 id="&#x5217;&#x8868;list">&#x5217;&#x8868;List</h2>
+<h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3>
+<p>&#x4FDD;&#x5B58;&#x4E00;&#x7CFB;&#x5217;&#x76F8;&#x5173;&#x6570;&#x636E;&#x7684;&#x96C6;&#x5408;</p>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code>arr = [1,2,3,4,5]
+&#x8BBF;&#x95EE;&#x5217;&#x8868;
+print(arr[0])
+</code></pre><h3 id="&#x8BBF;&#x95EE;&#x5217;&#x8868;">&#x8BBF;&#x95EE;&#x5217;&#x8868;</h3>
+<pre><code>arr[index]
+</code></pre><h3 id="&#x5E38;&#x7528;&#x7684;&#x904D;&#x5386;&#x5217;&#x8868;&#x7684;&#x65B9;&#x5F0F;">&#x5E38;&#x7528;&#x7684;&#x904D;&#x5386;&#x5217;&#x8868;&#x7684;&#x65B9;&#x5F0F;</h3>
+<pre><code> &#x65B9;&#x6CD5;1
+
+    arr = [[1,2],[3,4]]
+    for i in arr:
+        print(i)
+        print(arr.index(i),i)
+
+    range()&#x5185;&#x5EFA;&#x51FD;&#x6570;&#xFF1A;
+    1&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x7ED3;&#x675F;&#x7684;&#x503C;  &#x4F1A;&#x8FD4;&#x56DE;&#x5305;&#x542B;0-n&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x7684;&#x5E8F;&#x5217;
+    print(list(range(10)))    #&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x6210;&#x5217;&#x8868;
+    2&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x5F00;&#x59CB;-&#x7ED3;&#x675F;&#x4E4B;&#x95F4;&#x7684;&#x5E8F;&#x5217;
+    print(list(range(5,10)))
+    3&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7ED3;&#x675F;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6B65;&#x8FDB;&#x503C;&#x3002;
+</code></pre><pre><code> &#x65B9;&#x6CD5;2
+
+    arr = [[1,2],[3,4]]
+
+    for i in range(len(arr)):
+        print(i,arr[i])
+</code></pre><pre><code> &#x65B9;&#x6CD5;3
+
+    arr = [[1,2],[3,4]]
+
+    enumerate() &#x8FD4;&#x56DE;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x6807;&#x548C;&#x503C;
+    print(list(enumerate(arr)))
+    for i,v in enumerate(arr):
+        print(i,v)
+</code></pre><pre><code> &#x65B9;&#x6CD5;4
+    &#x8D4B;&#x503C; &#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x53BB;&#x904D;&#x5386;
+    a,b,c,d,e = (1,2,3,4,5)
+</code></pre><h3 id="&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;">&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;</h3>
+<pre><code>&#x83B7;&#x53D6;&#x5217;&#x8868;&#x957F;&#x5EA6;
+print(len(arr[-1]))
+</code></pre><h3 id="&#x5217;&#x8868;&#x7684;&#x6DF1;&#x62F7;&#x8D1D;&#x548C;&#x6D45;&#x62F7;&#x8D1D;">&#x5217;&#x8868;&#x7684;&#x6DF1;&#x62F7;&#x8D1D;&#x548C;&#x6D45;&#x62F7;&#x8D1D;</h3>
+<pre><code>&#x6DF1;&#x62F7;&#x8D1D;&#x6D45;&#x62F7;&#x8D1D;
+arr1 = arr       #&#x4F20;&#x5740;
+print(id(arr1),id(arr))
+a = 10
+b = a
+print(id(a),id(b))
+
+arr1[0] = &apos;a&apos;
+print(arr1)
+print(arr)
+
+import copy      #&#x5BFC;&#x5165;&#x5185;&#x7F6E;&#x5305;   &#xFF08;ctrl+&#x70B9;&#x51FB;&#xFF0C;&#x8FDB;&#x53BB;&#x5305;&#x91CC;&#x770B;&#x5305;&#x91CC;&#x7684;&#x6E90;&#x7801;&#xFF09;
+arr1 = copy.copy(arr)    #copy&#x6D45;&#x62F7;&#x8D1D;&#xFF0C;&#x628A;arr&#x4F20;&#x8FC7;&#x6765;  &#xFF08;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x5730;&#x5740;&#x4E0D;&#x76F8;&#x7B49;&#xFF09;
+arr1 = arr.copy()   #&#x6D45;&#x62F7;&#x8D1D;  &#xFF08;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x5730;&#x5740;&#x4E5F;&#x76F8;&#x7B49;&#xFF09;
+print(&apos;arr1&apos;,id(arr1),arr1)
+print(&apos;arr&apos;,id(arr),arr)
+
+import copy
+arr = [[1,2],[3,4]]
+arr1 = copy.deepcopy(arr)   #&#x6DF1;&#x62F7;&#x8D1D;&#xFF08;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#xFF09;  &#xFF08;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x5730;&#x5740;&#x76F8;&#x7B49;&#xFF09;
+arr1[0][0] = &apos;a&apos;   #&#x539F;&#x6765;&#x7684;arr&#x4E0D;&#x53D8;   &#xFF08;&#x5730;&#x5740;&#x4E0D;&#x76F8;&#x7B49;&#xFF09;
+print(&apos;arr1&apos;,id(arr1),arr1)     
+print(&apos;arr&apos;,id(arr),arr)
+</code></pre><h3 id="&#x5217;&#x8868;&#x9AD8;&#x7EA7;">&#x5217;&#x8868;&#x9AD8;&#x7EA7;</h3>
+<h4 id="&#x63A8;&#x5BFC;&#x5F0F;">&#x63A8;&#x5BFC;&#x5F0F;</h4>
+<pre><code>&#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;&#xFF1A;&#x5FEB;&#x901F;&#x751F;&#x6210;&#x65B0;&#x7684;&#x5217;&#x8868;
+&#x63A8;&#x5BFC;&#x5F0F;&#x7684;&#x5206;&#x7C7B;&#xFF1A;
+1 &#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;   2 &#x5B57;&#x5178;&#x63A8;&#x5BFC;&#x5F0F;   3 &#x96C6;&#x5408;&#x63A8;&#x5BFC;&#x5F0F;
+1 &#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;
+arr = [1,2,3,4,5]
+&#x8BED;&#x6CD5;&#xFF1A;
+1 &#x5143;&#x7D20;&#x5E42;&#x8FD0;&#x7B97;  in&#x540E;&#x662F;&#x8981;&#x904D;&#x5386;&#x7684;&#x5185;&#x5BB9;,for&#x540E;&#x662F;&#x8981;&#x7684;&#x4E1C;&#x897F;,&#x6700;&#x524D;&#x9762;&#x7684;&#x8981;&#x7684;&#x7ED3;&#x679C;,
+arr2 = [ item*item for item in arr ]
+print(arr2)
+2 &#x8F93;&#x51FA;&#x5076;&#x6570;,&#x5E76;&#x5E42;&#x8FD0;&#x7B97;
+arr2 = [ item*item for item in arr if item%2==0]
+print(arr2)
+3 &#x8F93;&#x51FA;1-100&#x7684;&#x5076;&#x6570;
+arr2 = list(range(1,101))
+arr3 = [ item for item in arr2 if item%2==0]
+print(arr3)
+</code></pre><h4 id="&#x5217;&#x8868;&#x7684;&#x5185;&#x5EFA;&#x51FD;&#x6570;">&#x5217;&#x8868;&#x7684;&#x5185;&#x5EFA;&#x51FD;&#x6570;</h4>
+<pre><code>List&#x5185;&#x5EFA;&#x51FD;&#x6570;
+1&#x3001;L.append(var)   #&#x8FFD;&#x52A0;&#x5143;&#x7D20;
+2&#x3001;L.insert(index,var)
+3&#x3001;L.pop(var)      #&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x4ECE;list&#x4E2D;&#x5220;&#x9664;&#x4E4B;
+4&#x3001;L.remove(var)   #&#x5220;&#x9664;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x8BE5;&#x5143;&#x7D20;
+5&#x3001;L.count(var)    #&#x8BE5;&#x5143;&#x7D20;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x4E2A;&#x6570;
+6&#x3001;L.index(var)    #&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;,&#x65E0;&#x5219;&#x629B;&#x5F02;&#x5E38; 
+7&#x3001;L.extend(list)  #&#x8FFD;&#x52A0;list&#xFF0C;&#x5373;&#x5408;&#x5E76;list&#x5230;L&#x4E0A;
+8&#x3001;L.sort()        #&#x6392;&#x5E8F;
+9&#x3001;L.reverse()     #&#x5012;&#x5E8F;
+list &#x64CD;&#x4F5C;&#x7B26;:,+,*&#xFF0C;&#x5173;&#x952E;&#x5B57;del
+a[1:]       #&#x7247;&#x6BB5;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x7528;&#x4E8E;&#x5B50;list&#x7684;&#x63D0;&#x53D6;
+[1,2]+[3,4] #&#x4E3A;[1,2,3,4]&#x3002;&#x540C;extend()
+[2]*4       #&#x4E3A;[2,2,2,2]
+del L[1]    #&#x5220;&#x9664;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x7684;&#x5143;&#x7D20;
+del L[1:3]  #&#x5220;&#x9664;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x8303;&#x56F4;&#x7684;&#x5143;&#x7D20;
+</code></pre><h2 id="&#x5143;&#x7EC4;-tuple">&#x5143;&#x7EC4; tuple</h2>
+<h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3>
+<p>&#x4E0D;&#x53EF;&#x6539;&#x53D8;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;</p>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code>&#x8BED;&#x6CD5;&#xFF1A;
+
+t1 = ()
+print(type(t1))
+t2 = (1,)
+print(type(t2))
+&#x9762;&#x8BD5;&#x9898;  &#x6570;&#x7EC4;&#x7684;id&#x5730;&#x5740;&#x4E0D;&#x53D8;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+t1 = ([1,2],[3,4])
+t1[0][0] = 2
+print(t1)
+</code></pre><h3 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x5F97;&#x52A0;&#x9017;&#x53F7;&#xFF0C;&#x4E0D;&#x7136;&#x5B9A;&#x4E49;&#x7684;&#x5C31;&#x662F;int&#x578B;</p>
+<pre><code>1&#x3001;&#x5143;&#x7EC4;&#x548C;&#x5217;&#x8868;&#x7C7B;&#x4F3C;&#xFF0C;&#x533A;&#x522B;&#x5C31;&#x662F;&#x5143;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x53EF;&#x4EE5;&#x6539;&#x53D8;
+2&#x3001;&#x5143;&#x7EC4;&#x901A;&#x8FC7;&#x5706;&#x62EC;&#x53F7;&#x5B9A;&#x4E49;
+3&#x3001;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5207;&#x7247;
+4&#x3001;&#x5143;&#x7EC4;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5143;&#x7EC4;
+    t2 = (1,)
+    print(type(t2))
+5&#x3001;&#x7A7A;&#x5143;&#x7EC4;   mytuple = ()   #tuple&#x7C7B;&#x578B;
+</code></pre><h3 id="&#x8BBF;&#x95EE;&#x5143;&#x7EC4;&#xFF1A;&#x540C;&#x5217;&#x8868;">&#x8BBF;&#x95EE;&#x5143;&#x7EC4;&#xFF1A;&#x540C;&#x5217;&#x8868;</h3>
+<h3 id="&#x4FBF;&#x5229;&#x5143;&#x7EC4;&#xFF1A;&#x540C;&#x5217;&#x8868;">&#x4FBF;&#x5229;&#x5143;&#x7EC4;&#xFF1A;&#x540C;&#x5217;&#x8868;</h3>
+<h3 id="&#x5143;&#x7EC4;&#x9AD8;&#x7EA7;">&#x5143;&#x7EC4;&#x9AD8;&#x7EA7;</h3>
+<p>&#x5143;&#x7EC4;&#x7684;&#x5185;&#x5EFA;&#x51FD;&#x6570;</p>
+<pre><code>1.cmp(tuple1, tuple2)  &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5143;&#x7EC4;&#x5143;&#x7D20;&#x3002;
+2.len(tuple)  &#x8BA1;&#x7B97;&#x5143;&#x7EC4;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x3002;
+3.max(tuple)  &#x8FD4;&#x56DE;&#x5143;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x6700;&#x5927;&#x503C;&#x3002;
+4.min(tuple)   &#x8FD4;&#x56DE;&#x5143;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x6700;&#x5C0F;&#x503C;&#x3002;
+5.tuple(seq)  &#x5C06;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x5143;&#x7EC4;&#x3002;
+
+tuple.index(obj,end=len(tuple))
+tuple.count(obj)   #&#x8FD4;&#x56DE;obj&#x51FA;&#x73B0;
+</code></pre><h2 id="&#x5B57;&#x5178;-dict&#xFF08;&#x5BF9;&#x8C61;&#xFF0C;json&#xFF09;">&#x5B57;&#x5178; dict&#xFF08;&#x5BF9;&#x8C61;&#xFF0C;json&#xFF09;</h2>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<p>&#x521B;&#x5EFA;&#x65B9;&#x5F0F;</p>
+<pre><code>&#xFF08;1&#xFF09;json&#x65B9;&#x5F0F;
+dict1 = {1:123,&apos;name&apos;:&apos;wss&apos;,(1,2,3):&apos;abc&apos;}
+&#x8BBF;&#x95EE;
+print(dict1[1])
+print(dict1[&apos;name&apos;])
+print(dict1[(1,2,3)])
+&#xFF08;2&#xFF09;&#x901A;&#x8FC7;&#x5185;&#x5EFA;&#x51FD;&#x6570;dict()&#x521B;&#x5EFA;
+dict2 = dict()    #&#x521B;&#x5EFA;&#x4E86;&#x7A7A;&#x5B57;&#x5178;
+&#x8BBE;&#x7F6E;&#x952E;&#x503C;
+dict2[1] = 123
+dict2[&apos;name&apos;] = &apos;wss&apos;
+dict2[(1,2,3)] = &apos;abc&apos;
+&#x8BBF;&#x95EE;
+print(dict2)
+&#xFF08;3&#xFF09;&#x6279;&#x91CF;&#x521B;&#x5EFA;&#x952E;&#x503C;
+dict3 = dict.fromkeys([1,2,3,4,5],&apos;a&apos;)
+print(dict3)
+</code></pre><h3 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;:</h3>
+<p><strong>1&#x3001;&#x5B57;&#x5178;&#x4EE5;&#x952E;&#x503C;&#x5BF9;&#x5F62;&#x5F0F;&#x5B58;&#x5728;&#xFF1A;{key:value}</strong></p>
+<p><strong>2&#x3001;&#x67E5;&#x627E;&#x548C;&#x63D2;&#x5165;&#x7684;&#x901F;&#x5EA6;&#x6781;&#x5FEB;&#xFF0C;&#x4E0D;&#x4F1A;&#x968F;&#x7740;key&#x7684;&#x589E;&#x52A0;&#x800C;&#x589E;&#x52A0;</strong></p>
+<p><strong>3&#x3001;&#x4E00;&#x4E9B;&#x53EF;&#x53D8;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0D;&#x53EF;&#x505A;key&#x503C;&#xFF0C;&#x800C;value&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x6570;&#x636E;</strong></p>
+<p><strong>4&#x3001;&#x5B57;&#x5178;&#x4E2D;&#x6570;&#x636E;&#x5143;&#x7D20;&#x662F;&#x65E0;&#x5E8F;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8FDB;&#x884C;&#x5411;&#x7D22;&#x5F15;&#x548C;&#x5207;&#x7247;&#x64CD;&#x4F5C;</strong></p>
+<p><strong>5&#x3001;&#x5B57;&#x5178;&#x662F;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></p>
+<pre><code>&#x5B57;&#x5178;&#x7684;&#x952E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x8FD0;&#x7B97;&#xFF0C;&#x6240;&#x4EE5;&#x952E;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;&#x53EA;&#x8981;&#x952E;&#x80FD;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x8FD0;&#x7B97;&#xFF0C;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x952E;&#x3010;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x5B57;&#x578B;&#x3001;&#x53D8;&#x91CF;&#xFF08;&#x5B58;&#x7684;&#x503C;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x80FD;&#x591F;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x8FD0;&#x7B97;&#xFF09;&#x3011;
+</code></pre><h3 id="&#x5B57;&#x5178;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;">&#x5B57;&#x5178;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;</h3>
+<ul>
+<li>mylist[&#x952E;]<h3 id="&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h3>
+</li>
+<li>mylist[&apos;newKey&apos;] = value<h3 id="&#x5220;&#x9664;&#x5B57;&#x5178;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">&#x5220;&#x9664;&#x5B57;&#x5178;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h3>
+</li>
+<li>del<pre><code>  &#x5220;&#x9664;&#x5B57;&#x5178;&#x7684;&#x6570;&#x636E;&#x4EE5;&#x53CA;&#x5B57;&#x5178;  &#x901A;&#x8FC7;del
+  del dict3[2]
+  print(dict3)
+  del dict3
+  print(dict3)
+</code></pre><h3 id="&#x5B57;&#x5178;&#x7684;&#x904D;&#x5386;">&#x5B57;&#x5178;&#x7684;&#x904D;&#x5386;</h3>
+</li>
+<li>for in
+```
+&#x904D;&#x5386;&#x5B57;&#x5178;  python&#x91CC;&#x53EA;&#x6709;for in
+1
+for k in dict3:
+  print(k)
+  print(dict3[k])</li>
+</ul>
+<p>2
+print(dict3.items())
+for k,v in dict3.items():
+    print(k,v)</p>
+<p>3
+arr = zip([1,2,3,4],[&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;],[11,22,33,44])   # &#x5C06;&#x4F20;&#x5165;&#x7684;&#x5217;&#x8868;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;
+print(list(arr))
+dict3.keys()    # &#x8FD4;&#x56DE;&#x952E;
+dict3.values()    #&#x8FD4;&#x56DE;&#x503C;
+for k,v in zip(dict3.keys(),dict3.values()):
+    print(k,v)</p>
+<pre><code>### &#x5B57;&#x5178;&#x9AD8;&#x7EA7;
+#### &#x5B57;&#x5178;&#x7684;&#x5185;&#x5EFA;&#x51FD;&#x6570;
+</code></pre><p>&#x5B57;&#x5178;dictionary&#x5185;&#x5EFA;&#x51FD;&#x6570;
+1&#x3001;D.get(key, 0)       #&#x540C;dict[key]&#xFF0C;&#x591A;&#x4E86;&#x4E2A;&#x6CA1;&#x6709;&#x5219;&#x8FD4;&#x56DE;&#x7F3A;&#x7701;&#x503C;&#xFF0C;0&#x3002;[]&#x6CA1;&#x6709;&#x5219;&#x629B;&#x5F02;&#x5E38;
+2&#x3001;D.has_key(key)      #&#x6709;&#x8BE5;&#x952E;&#x8FD4;&#x56DE;TRUE&#xFF0C;&#x5426;&#x5219;FALSE
+3&#x3001;D.keys()            #&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#x952E;&#x7684;&#x5217;&#x8868;
+4&#x3001;D.values()          #&#x4EE5;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x53EF;&#x5305;&#x542B;&#x91CD;&#x590D;&#x5143;&#x7D20;
+5&#x3001;D.items()           #&#x5C06;&#x6240;&#x6709;&#x7684;&#x5B57;&#x5178;&#x9879;&#x4EE5;&#x5217;&#x8868;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x8FD9;&#x4E9B;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x90FD;&#x6765;&#x81EA;&#x4E8E;(&#x952E;,&#x503C;),&#x4F46;&#x662F;&#x9879;&#x5728;&#x8FD4;&#x56DE;&#x65F6;&#x5E76;&#x6CA1;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x987A;&#x5E8F;<br>6&#x3001;D.update(dict2)     #&#x589E;&#x52A0;&#x5408;&#x5E76;&#x5B57;&#x5178;
+7&#x3001;D.popitem()         #&#x5F97;&#x5230;&#x4E00;&#x4E2A;pair&#xFF0C;&#x5E76;&#x4ECE;&#x5B57;&#x5178;&#x4E2D;&#x5220;&#x9664;&#x5B83;&#x3002;&#x5DF2;&#x7A7A;&#x5219;&#x629B;&#x5F02;&#x5E38;
+8&#x3001;D.clear()           #&#x6E05;&#x7A7A;&#x5B57;&#x5178;&#xFF0C;&#x540C;del dict
+9&#x3001;D.copy()            #&#x62F7;&#x8D1D;&#x5B57;&#x5178;
+10&#x3001;D.cmp(dict1,dict2)  #&#x6BD4;&#x8F83;&#x5B57;&#x5178;&#xFF0C;(&#x4F18;&#x5148;&#x7EA7;&#x4E3A;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x3001;&#x952E;&#x5927;&#x5C0F;&#x3001;&#x952E;&#x503C;&#x5927;&#x5C0F;)</p>
+<pre><code>                #&#x7B2C;&#x4E00;&#x4E2A;&#x5927;&#x8FD4;&#x56DE;1&#xFF0C;&#x5C0F;&#x8FD4;&#x56DE;-1&#xFF0C;&#x4E00;&#x6837;&#x8FD4;&#x56DE;0
+</code></pre><p>11&#x3001;D.pop(key[,default])       #&#x5220;&#x9664;&#x5B57;&#x5178;&#x7ED9;&#x5B9A;&#x952E; key &#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x88AB;&#x5220;&#x9664;&#x7684;&#x503C;&#x3002;key&#x503C;&#x5FC5;&#x987B;&#x7ED9;&#x51FA;&#x3002; &#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;default&#x503C;&#x3002;
+12&#x3001;dict.fromkeys(seq[, val])      #&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x5B57;&#x5178;&#xFF0C;&#x4EE5;&#x5E8F;&#x5217; seq &#x4E2D;&#x5143;&#x7D20;&#x505A;&#x5B57;&#x5178;&#x7684;&#x952E;&#xFF0C;val &#x4E3A;&#x5B57;&#x5178;&#x6240;&#x6709;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x521D;&#x59CB;&#x503C;</p>
+<p>dictionary&#x7684;&#x590D;&#x5236;
+dict1 = dict        #&#x522B;&#x540D;
+dict2=dict.copy()   #&#x514B;&#x9686;&#xFF0C;&#x5373;&#x53E6;&#x4E00;&#x4E2A;&#x62F7;&#x8D1D;&#x3002;</p>
+<pre><code>#### &#x5B57;&#x5178;&#x63A8;&#x5BFC;&#x5F0F;
+</code></pre><p>&#x5B57;&#x5178;&#x7684;&#x63A8;&#x5BFC;&#x5F0F;
+d = {&apos;a&apos;:1,&apos;A&apos;:10,&apos;b&apos;:2,&apos;B&apos;:20}
+1
+d2 = { k:str(v)+&apos;m&apos; for k,v in d.items()}
+print(d2)
+2
+d3 = { k:str(v + d[k.upper()])+&apos;px&apos; for k,v in d.items() if k.islower()}
+print(d3)</p>
+<pre><code>#### &#x6DF1;&#x62F7;&#x8D1D;&#x3001;&#x6D45;&#x62F7;&#x8D1D;
+#### collection  &#x4E00;&#x4E2A;&#x66F4;&#x5F3A;&#x5927;&#x7684;dict&#x5305;
+## &#x96C6;&#x5408; set&#xFF08;&#x7ED3;&#x5408;&#x4E86;&#x5B57;&#x5178;&#x548C;&#x5217;&#x8868;&#xFF09;
+### &#x5B9A;&#x4E49;
+    set()    #&#x628A;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x8F6C;&#x5316;&#x4E3A;&#x96C6;&#x5408;
+### &#x96C6;&#x5408;&#x9AD8;&#x7EA7;
+#### &#x96C6;&#x5408;&#x63A8;&#x5BFC;&#x5F0F;
+</code></pre><p>&#x96C6;&#x5408;&#x63A8;&#x5BFC;&#x5F0F;
+&#x6CD5;1
+s1 = {1,2,3,4,5,6}
+s2 = { item+1 for item in s1}
+print(s2)
+&#x6CD5;2
+s2 = { item for item in s1 if item%2==0}
+print(s2)</p>
+<pre><code>#### &#x96C6;&#x5408;&#x5185;&#x5EFA;&#x51FD;&#x6570;
+</code></pre><p>add()    &#x4E3A;&#x96C6;&#x5408;&#x6DFB;&#x52A0;&#x5143;&#x7D20;
+clear()    &#x79FB;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;
+copy()    &#x62F7;&#x8D1D;&#x4E00;&#x4E2A;&#x96C6;&#x5408;
+difference()    &#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x5DEE;&#x96C6;
+difference_update()    &#x79FB;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x4E5F;&#x5B58;&#x5728;&#x3002;
+discard()    &#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x5143;&#x7D20;
+intersection()    &#x8FD4;&#x56DE;&#x96C6;&#x5408;&#x7684;&#x4EA4;&#x96C6;
+intersection_update()    &#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x3002;
+isdisjoint()    &#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x662F;&#x5426;&#x5305;&#x542B;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD4;&#x56DE; True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; False&#x3002;
+issubset()    &#x5224;&#x65AD;&#x6307;&#x5B9A;&#x96C6;&#x5408;&#x662F;&#x5426;&#x4E3A;&#x8BE5;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x96C6;&#x5408;&#x7684;&#x5B50;&#x96C6;&#x3002;
+issuperset()    &#x5224;&#x65AD;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x96C6;&#x5408;&#x662F;&#x5426;&#x4E3A;&#x6307;&#x5B9A;&#x96C6;&#x5408;&#x7684;&#x5B50;&#x96C6;
+pop()    &#x968F;&#x673A;&#x79FB;&#x9664;&#x5143;&#x7D20;
+remove()    &#x79FB;&#x9664;&#x6307;&#x5B9A;&#x5143;&#x7D20;
+symmetric_difference()    &#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x4E2D;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408;&#x3002;
+symmetric_difference_update()    &#x79FB;&#x9664;&#x5F53;&#x524D;&#x96C6;&#x5408;&#x4E2D;&#x5728;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x96C6;&#x5408;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x5C06;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x96C6;&#x5408;&#x4E2D;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x5F53;&#x524D;&#x96C6;&#x5408;&#x4E2D;&#x3002;
+union()    &#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;
+update()    &#x7ED9;&#x96C6;&#x5408;&#x6DFB;&#x52A0;&#x5143;&#x7D20;</p>
+<pre><code>```
+&#x901A;&#x8FC7;set&#x96C6;&#x5408;&#x5143;&#x7D20;&#x4E92;&#x5F02;&#x6027;&#x8FDB;&#x884C;&#x5217;&#x8868;&#x7684;&#x53BB;&#x91CD;
+arr1 = [1,1,2,2]
+print(list(set(arr1)))
+</code></pre><h2 id="&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>type</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="变量.html" class="navigation navigation-prev " aria-label="Previous page: 第6节：变量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="运算符.html" class="navigation navigation-next " aria-label="Next page: 第8节：运算符">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第7节：数据类型","level":"1.2.7","depth":2,"next":{"title":"第8节：运算符","level":"1.2.8","depth":2,"path":"Python基础/运算符.md","ref":"Python基础/运算符.md","articles":[]},"previous":{"title":"第6节：变量","level":"1.2.6","depth":2,"path":"Python基础/变量.md","ref":"Python基础/变量.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Python基础/数据类型.md","mtime":"2019-04-14T11:05:42.509Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T15:00:50.504Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

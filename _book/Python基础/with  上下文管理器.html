@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第16节：with  上下文管理器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="迭代器和生成器.html" />
+    
+    
+    <link rel="prev" href="异常.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python定位应用.html">
+            
+                <a href="Python定位应用.html">
+            
+                    
+                    第2节：定位应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="开启虚拟环境.html">
+            
+                <a href="开启虚拟环境.html">
+            
+                    
+                    第3节：开启虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="pip（包管理工具操作）.html">
+            
+                <a href="pip（包管理工具操作）.html">
+            
+                    
+                    第4节：pip（包管理工具操作）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="输入输出测试工具.html">
+            
+                <a href="输入输出测试工具.html">
+            
+                    
+                    第5节：输入输出测试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="变量.html">
+            
+                <a href="变量.html">
+            
+                    
+                    第6节：变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    第7节：数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="运算符.html">
+            
+                <a href="运算符.html">
+            
+                    
+                    第8节：运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="流程控制.html">
+            
+                <a href="流程控制.html">
+            
+                    
+                    第9节：流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    第10节：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="常用系统内建函数.html">
+            
+                <a href="常用系统内建函数.html">
+            
+                    
+                    第11节：常用系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="面向对象OOP.html">
+            
+                <a href="面向对象OOP.html">
+            
+                    
+                    第12节：面向对象OOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="面向对象单例设计模式.html">
+            
+                <a href="面向对象单例设计模式.html">
+            
+                    
+                    第13节：面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="文件操作.html">
+            
+                <a href="文件操作.html">
+            
+                    
+                    第14节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="异常.html">
+            
+                <a href="异常.html">
+            
+                    
+                    第15节：异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.16" data-path="with  上下文管理器.html">
+            
+                <a href="with  上下文管理器.html">
+            
+                    
+                    第16节：with  上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="迭代器和生成器.html">
+            
+                <a href="迭代器和生成器.html">
+            
+                    
+                    第17节：迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="模块与包（modules）.html">
+            
+                <a href="模块与包（modules）.html">
+            
+                    
+                    第18节：模块与包（modules）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Python网络爬虫/">
+            
+                <a href="../Python网络爬虫/">
+            
+                    
+                    第二章 Python网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Python网络爬虫/概述.html">
+            
+                <a href="../Python网络爬虫/概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Python网络爬虫/HTTP概述.html">
+            
+                <a href="../Python网络爬虫/HTTP概述.html">
+            
+                    
+                    第2节：HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Python网络爬虫/数据获取.html">
+            
+                <a href="../Python网络爬虫/数据获取.html">
+            
+                    
+                    第3节：数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Python网络爬虫/数据存储.html">
+            
+                <a href="../Python网络爬虫/数据存储.html">
+            
+                    
+                    第4节：数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Python网络爬虫/项目实战.html">
+            
+                <a href="../Python网络爬虫/项目实战.html">
+            
+                    
+                    第5节：项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Python网络爬虫/Scrapy框架.html">
+            
+                <a href="../Python网络爬虫/Scrapy框架.html">
+            
+                    
+                    第6节：Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Python网络爬虫/常见反爬策略.html">
+            
+                <a href="../Python网络爬虫/常见反爬策略.html">
+            
+                    
+                    第7节：常见反爬策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Python网络爬虫/抓包工具.html">
+            
+                <a href="../Python网络爬虫/抓包工具.html">
+            
+                    
+                    第8节：抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Python网络爬虫/一些tip.html">
+            
+                <a href="../Python网络爬虫/一些tip.html">
+            
+                    
+                    第9节：一些tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python系统编程/">
+            
+                <a href="../python系统编程/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python系统编程/多进程多线程编程.html">
+            
+                <a href="../python系统编程/多进程多线程编程.html">
+            
+                    
+                    第1节：多进程多线程编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python系统编程/线程.html">
+            
+                <a href="../python系统编程/线程.html">
+            
+                    
+                    第2节：线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第16节：with  上下文管理器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;16&#x8282;&#xFF1A;with--&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;">&#x7B2C;16&#x8282;&#xFF1A;with  &#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;</h1>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<p>&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x5728;&#x6267;&#x884C;with&#x8BED;&#x53E5;&#x65F6;&#x8981;&#x5EFA;&#x7ACB;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x5904;&#x7406;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x5757;&#x6240;&#x9700;&#x7684;&#x8FD0;&#x884C;&#x662F;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x5165;&#x53E3;&#x548C;&#x51FA;&#x53E3;&#x3002;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x901A;&#x5E38;&#x4F7F;&#x7528;with&#x8BED;&#x53E5;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5B83;&#x4EEC;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x4F5C;&#x7528;">&#x4F5C;&#x7528;</h2>
+<p>with&#x8FD8;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x4E0B;&#x6587;&#x7684;&#x5F02;&#x5E38;&#xFF08;&#x5BF9;&#x91CC;&#x9762;&#x7684;&#x9519;&#x8BEF;&#x8FDB;&#x884C;&#x6355;&#x83B7;&#xFF09;</p>
+<h2 id="&#x7528;&#x9014;">&#x7528;&#x9014;</h2>
+<ol>
+<li>&#x4FDD;&#x5B58;&#x548C;&#x6062;&#x590D;&#x5404;&#x79CD;&#x5168;&#x5C40;&#x72B6;&#x6001;</li>
+<li>&#x9501;&#x5B9A;&#x548C;&#x89E3;&#x9501;&#x8D44;&#x6E90;</li>
+<li>&#x5173;&#x95ED;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;<h2 id="&#x91CD;&#x70B9;">&#x91CD;&#x70B9;</h2>
+```<h3 id="&#x91CD;&#x70B9;&#x6765;&#x4E86;">&#x91CD;&#x70B9;&#x6765;&#x4E86;</h3>
+<h1 id="with-&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;">with &#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;</h1>
+<h1 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h1>
+<h1 id="with-openday04txtrb-as-f---------openday04txtrb-&#x4F5C;&#x4E3A;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x8D4B;&#x7ED9;-f&#x5B83;&#x4F1A;&#x52A0;&#x4E0A;-enter&#x3001;exit">with open(&apos;day04.txt&apos;,&apos;rb&apos;) as f:        # open(&apos;day04.txt&apos;,&apos;rb&apos;) &#x4F5C;&#x4E3A;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x8D4B;&#x7ED9; f,&#x5B83;&#x4F1A;&#x52A0;&#x4E0A; <strong>enter</strong>&#x3001;<strong>exit</strong></h1>
+<h1 id="fread">f.read()</h1>
+</li>
+</ol>
+<h1 id="&#x6A21;&#x62DF;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;">&#x6A21;&#x62DF;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;</h1>
+<p>class Simple:       # &#x5916;&#x8FB9;&#x7684;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x662F;&#x4E0A;&#x6587;
+    def <strong>enter</strong>(self):        # &#x5165;&#x53E3;
+        print(&quot;enter&quot;)
+        return self
+    def <strong>exit</strong>(self, exc_type, exc_val, exc_tb):      # &#x7EC8;&#x7A76;&#x4F1A;&#x9000;&#x51FA;    &#x4E0D;&#x7BA1;&#x6B63;&#x786E;&#x4E0E;&#x5426;&#x90FD;&#x8981;&#x4E00;&#x4E2A;&#x51FA;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x4E0B;&#x6587;&#x7684;&#x5F02;&#x5E38;&#xFF08;&#x5BF9;&#x91CC;&#x9762;&#x7684;&#x9519;&#x8BEF;&#x8FDB;&#x884C;&#x6355;&#x83B7;&#xFF09;
+        print(&apos;exit&apos;)</p>
+<pre><code>    # print(&quot;exc_type&quot;,exc_type)
+    # print(&quot;exc_val&quot;,exc_val)
+    # print(&quot;exc_tb&quot;, exc_tb)
+    # return True     # &#x4E0D;&#x62A5;&#x9519;&#x4E86;&#xFF0C;&#x5BF9;&#x9519;&#x8BEF;&#x8FDB;&#x884C;&#x6539;&#x9020;
+# def run(self):
+#     print(1/0)
+</code></pre><p>#</p>
+<h1 id="def-simple">def simple():</h1>
+<h1 id="printsimple">print(&quot;simple&quot;)</h1>
+<h1 id="return-simple">return Simple()</h1>
+<p>with Simple() as f:
+    print(&quot;f&quot;)</p>
+<pre><code># f.run()     # &#x4E0B;&#x6587;
+</code></pre><p>```</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="异常.html" class="navigation navigation-prev " aria-label="Previous page: 第15节：异常">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="迭代器和生成器.html" class="navigation navigation-next " aria-label="Next page: 第17节：迭代器和生成器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第16节：with  上下文管理器","level":"1.2.16","depth":2,"next":{"title":"第17节：迭代器和生成器","level":"1.2.17","depth":2,"path":"Python基础/迭代器和生成器.md","ref":"Python基础/迭代器和生成器.md","articles":[]},"previous":{"title":"第15节：异常","level":"1.2.15","depth":2,"path":"Python基础/异常.md","ref":"Python基础/异常.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Python基础/with  上下文管理器.md","mtime":"2019-04-14T13:48:38.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T15:00:50.504Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

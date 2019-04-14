@@ -1,0 +1,936 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第10节：函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="常用系统内建函数.html" />
+    
+    
+    <link rel="prev" href="流程控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python定位应用.html">
+            
+                <a href="Python定位应用.html">
+            
+                    
+                    第2节：定位应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="开启虚拟环境.html">
+            
+                <a href="开启虚拟环境.html">
+            
+                    
+                    第3节：开启虚拟环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="pip（包管理工具操作）.html">
+            
+                <a href="pip（包管理工具操作）.html">
+            
+                    
+                    第4节：pip（包管理工具操作）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="输入输出测试工具.html">
+            
+                <a href="输入输出测试工具.html">
+            
+                    
+                    第5节：输入输出测试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="变量.html">
+            
+                <a href="变量.html">
+            
+                    
+                    第6节：变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    第7节：数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="运算符.html">
+            
+                <a href="运算符.html">
+            
+                    
+                    第8节：运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="流程控制.html">
+            
+                <a href="流程控制.html">
+            
+                    
+                    第9节：流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    第10节：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="常用系统内建函数.html">
+            
+                <a href="常用系统内建函数.html">
+            
+                    
+                    第11节：常用系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="面向对象OOP.html">
+            
+                <a href="面向对象OOP.html">
+            
+                    
+                    第12节：面向对象OOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="面向对象单例设计模式.html">
+            
+                <a href="面向对象单例设计模式.html">
+            
+                    
+                    第13节：面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="文件操作.html">
+            
+                <a href="文件操作.html">
+            
+                    
+                    第14节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="异常.html">
+            
+                <a href="异常.html">
+            
+                    
+                    第15节：异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="with  上下文管理器.html">
+            
+                <a href="with  上下文管理器.html">
+            
+                    
+                    第16节：with  上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="迭代器和生成器.html">
+            
+                <a href="迭代器和生成器.html">
+            
+                    
+                    第17节：迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="模块与包（modules）.html">
+            
+                <a href="模块与包（modules）.html">
+            
+                    
+                    第18节：模块与包（modules）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Python网络爬虫/">
+            
+                <a href="../Python网络爬虫/">
+            
+                    
+                    第二章 Python网络爬虫
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Python网络爬虫/概述.html">
+            
+                <a href="../Python网络爬虫/概述.html">
+            
+                    
+                    第1节：概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Python网络爬虫/HTTP概述.html">
+            
+                <a href="../Python网络爬虫/HTTP概述.html">
+            
+                    
+                    第2节：HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Python网络爬虫/数据获取.html">
+            
+                <a href="../Python网络爬虫/数据获取.html">
+            
+                    
+                    第3节：数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Python网络爬虫/数据存储.html">
+            
+                <a href="../Python网络爬虫/数据存储.html">
+            
+                    
+                    第4节：数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Python网络爬虫/项目实战.html">
+            
+                <a href="../Python网络爬虫/项目实战.html">
+            
+                    
+                    第5节：项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Python网络爬虫/Scrapy框架.html">
+            
+                <a href="../Python网络爬虫/Scrapy框架.html">
+            
+                    
+                    第6节：Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Python网络爬虫/常见反爬策略.html">
+            
+                <a href="../Python网络爬虫/常见反爬策略.html">
+            
+                    
+                    第7节：常见反爬策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../Python网络爬虫/抓包工具.html">
+            
+                <a href="../Python网络爬虫/抓包工具.html">
+            
+                    
+                    第8节：抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../Python网络爬虫/一些tip.html">
+            
+                <a href="../Python网络爬虫/一些tip.html">
+            
+                    
+                    第9节：一些tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python系统编程/">
+            
+                <a href="../python系统编程/">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python系统编程/多进程多线程编程.html">
+            
+                <a href="../python系统编程/多进程多线程编程.html">
+            
+                    
+                    第1节：多进程多线程编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python系统编程/线程.html">
+            
+                <a href="../python系统编程/线程.html">
+            
+                    
+                    第2节：线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第10节：函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;10&#x8282;&#xFF1A;&#x51FD;&#x6570;">&#x7B2C;10&#x8282;&#xFF1A;&#x51FD;&#x6570;</h1>
+<h2 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h2>
+<p>&#x5C06;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF0C;&#x4EE5;&#x4FBF;&#x91CD;&#x590D;&#x5229;&#x7528;</p>
+<h2 id="&#x4F18;&#x70B9;">&#x4F18;&#x70B9;</h2>
+<ul>
+<li>&#x4F7F;&#x7A0B;&#x5E8F;&#x66F4;&#x52A0;&#x7B80;&#x5355;</li>
+<li>&#x903B;&#x8F91;&#x6027;&#x66F4;&#x5F3A;</li>
+<li>&#x8C03;&#x7528;&#x66F4;&#x65B9;&#x4FBF;</li>
+<li>&#x7EF4;&#x62A4;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x5BB9;&#x6613;<h2 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h2>
+<pre><code>&quot;&quot;&quot;
+def &#x51FD;&#x6570;&#x540D;&#xFF08;&#x5F62;&#x53C2;&#xFF09;&#xFF1A;
+  &#x51FD;&#x6570;&#x4F53;
+  return [value]
+&quot;&quot;&quot;
+</code></pre>&#x8BED;&#x6CD5;&#x6CE8;&#x610F;:
+&#x51FD;&#x6570;&#x76F8;&#x5BF9;&#x4E8E;del&#x5173;&#x952E;&#x5B57;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x4E00;&#x5B9A;&#x7684;&#x7A7A;&#x683C;&#x7F29;&#x8FDB;<h2 id="&#x8C03;&#x7528;">&#x8C03;&#x7528;</h2>
+<pre><code>&quot;&quot;&quot;
+&#x51FD;&#x6570;&#x540D;&#xFF08;&#x5B9E;&#x53C2;&#xFF09;
+&quot;&quot;&quot;
+</code></pre><h2 id="&#x53C2;&#x6570;&#x5F62;&#x5F0F;">&#x53C2;&#x6570;&#x5F62;&#x5F0F;</h2>
+</li>
+<li>&#x5FC5;&#x9009;&#x53C2;&#x6570;&#xFF08;&#x4E0D;&#x5199;&#x5C31;&#x9519;&#xFF09;<pre><code> def fn(name):
+ print(name)
+ fn()       # TypeError
+</code></pre></li>
+<li>&#x7F3A;&#x7701;&#x53C2;&#x6570; (&#x5FC5;&#x9009;&#x53C2;&#x6570;&#x548C;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x53EF;&#x8C03;&#x6574;&#xFF0C;&#x9ED8;&#x8BA4;&#x7B2C;&#x4E00;&#x4E2A;&#x5F62;&#x53C2;)<pre><code> def fn(name,sex=&apos;&#x7537;&apos;):
+ print(name,sex)
+ fn(&apos;wss&apos;)     # &#x6362;&#x4F4D;&#x7F6E;&#x4F1A;&#x51FA;&#x73B0;SyntaxError
+</code></pre></li>
+<li>&#x53EF;&#x53D8;&#x53C2;&#x6570;<pre><code> def fn(name,sex=&apos;&#x7537;&apos;,*cj):
+ print(name,sex,cj,type(cj))
+ fn(&apos;wss&apos;,&apos;&#x7537;&apos;,12,34,45)
+</code></pre></li>
+<li>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;<pre><code> def fn(name,sex=&apos;&#x7537;&apos;,*cj,**attr,):
+ print(name,sex,cj,attr,type(attr))
+ fn(&apos;wss&apos;,&apos;&#x7537;&apos;,12,14,34,56,height=180,weight=100)
+</code></pre></li>
+<li>&#x4F20;&#x53C2;&#x7684;&#x987A;&#x5E8F;&#xFF1A;&#x5FC5;&#x9009;&#x53C2;&#x6570;&#x3001;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF08;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#xFF09;&#x3001;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x3001;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</li>
+<li>&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#xFF1A;&#x4E07;&#x80FD;&#x53C2;&#x6570;<pre><code> def fn(*args,**kwargs):
+ print(args,kwargs)
+ fn(12,3445,2244,age=&apos;18&apos;,name=&apos;wss&apos;)
+</code></pre></li>
+<li><p>&#x89E3;&#x6784;&#x7528;&#x6CD5;<br>&#x52A0;&#x4E00;&#x4E2A;<em>&#xFF0C;&#x89E3;&#x6784;&#x51FA;&#x6765;    &#x52A0;&#x4E00;&#x4E2A;*</em>&#xFF0C;&#x89E3;&#x6784;&#x51FA;&#x6765;</p>
+<pre><code> def fn(a,b,c,d):
+ print(a,b,c,d)
+ arr = [1,2,3,4]
+ fn(*arr)
+
+ def fn(name,age,sex):
+ print(name,age,sex)
+ dict1 = {&apos;name&apos;:&apos;wss&apos;,&apos;age&apos;:18,&apos;sex&apos;:&apos;&#x7537;&apos;}
+ fn(**dict1)     #  fn(name=&apos;wss&apos;,age=18,sex=&apos;&#x7537;&apos;)  &#x4E5F;&#x53EF;  
+ fn(name=&apos;wss&apos;,sex=&apos;&#x7537;&apos;,age=18)   &#x4F7F;&#x7528;&#x952E;&#x503C;&#x5F62;&#x5F0F;&#x53EF;&#x4EE5;&#x4E0D;&#x9075;&#x5FAA;&#x987A;&#x5E8F;
+</code></pre><h2 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h2>
+<pre><code> return
+ def fn():
+ return 1,2,3
+ print(fn())     #&#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x53EF;&#x4EE5;&#x662F;&#x591A;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5143;&#x7EC4;
+ return&#x4F5C;&#x7528;:&#x8FD4;&#x56DE;&#x5E76;&#x7EC8;&#x6B62;&#x51FD;&#x6570;
+ return&#x6CE8;&#x610F;&#xFF1A;
+     1&#x3001;&#x53EF;&#x4EE5;&#x5199;&#x591A;&#x4E2A;return&#x8BED;&#x53E5;&#xFF0C;&#x6700;&#x7EC8;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x88AB;&#x6267;&#x884C;
+     2&#x3001;&#x4E0D;&#x80FD;&#x5728;return&#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x4E66;&#x5199;&#x4EE3;&#x7801;
+     3&#x3001;return&#x53EA;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5FC5;&#x987B;&#x4E3A;list/tuple/dict
+ a,b,c=fn()
+ print(fn(1,2,3))   #1,2,3
+</code></pre><h2 id="&#x4F8B;&#x5B50;&#xFF08;-&#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;&#xFF09;">&#x4F8B;&#x5B50;&#xFF08; &#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;&#xFF09;</h2>
+<pre><code>&#xFF08;1&#xFF09;&#x8F93;&#x51FA;&#x7B2C;&#x51E0;&#x4E2A;&#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;&#x7684;&#x503C;
+def f(n):
+ a,b=1,1
+ if n==1 or n ==2:
+     return 1
+ else:
+     i=3
+     while i&lt;=n:
+         a,b=b,a+b
+         i+=1
+     return b
+print(f(int(input(&quot;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#xFF1A;&quot;))))
+</code></pre><pre><code>&#xFF08;2&#xFF09;&#x8F93;&#x51FA;&#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;  &#xFF08;yield&#xFF09;
+def fab(max):
+ n, a, b = 0, 0, 1
+ while n &lt; max:
+     yield b
+     a, b = b, a + b
+     n+=1
+for i in fab(10):
+ print(i)
+</code></pre><h2 id="&#x9AD8;&#x9636;&#x51FD;&#x6570;">&#x9AD8;&#x9636;&#x51FD;&#x6570;</h2>
+<p>&#x5B9E;&#x53C2;&#x9AD8;&#x9636;&#x51FD;&#x6570;</p>
+</li>
+<li>&#x628A;&#x51FD;&#x6570;&#x540D;&#x5F53;&#x4F5C;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</li>
+</ul>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x9AD8;&#x9636;&#x51FD;&#x6570;</p>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;&#x4E2D;&#x5305;&#x542B;&#x51FD;&#x6570;&#x540D;<pre><code>1 &#x666E;&#x901A;&#x5199;&#x6CD5;
+&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;
+def fn(a,b,c):
+  return a+b+c
+print(fn(1,2,3))
+2 &#x67EF;&#x91CC;&#x5316;&#x5199;&#x6CD5;
+def fn(a):
+  def fn1(b):
+      def fn2(c):
+          return a+b+c
+      return fn2
+  return fn1
+print(fn(10)(20)(30))
+</code></pre><h2 id="&#x533F;&#x540D;&#x51FD;&#x6570;--lambda">&#x533F;&#x540D;&#x51FD;&#x6570;  lambda</h2>
+<h3 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h3>
+<pre><code>lamdba   &#x53C2;&#x6570;1&#xFF0C;&#x53C2;&#x6570;2&#xFF0C;..:&#x51FD;&#x6570;&#x4F53;
+</code></pre><h3 id="&#x8C03;&#x7528;">&#x8C03;&#x7528;</h3>
+</li>
+<li>&#x81EA;&#x8C03;&#x7528;<pre><code>print((lambda a,b:a+b)(10,20))
+</code></pre></li>
+<li>&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4F7F;&#x7528;
+  &#x9AD8;&#x9636;&#x51FD;&#x6570;&#x4E2D;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;<pre><code>def fn1(a):
+  return lambda  b: lambda c:a+b+c
+print(fn1(10)(20)(30))
+</code></pre></li>
+<li>&#x8D4B;&#x503C;<pre><code>fn = lambda a,b:a+b
+print(fn(10,20))
+</code></pre><h2 id="&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E0E;&#x5168;&#x5C40;&#x53D8;&#x91CF;">&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E0E;&#x5168;&#x5C40;&#x53D8;&#x91CF;</h2>
+global: &#x9876;&#x5C42;&#x5168;&#x5C40;&#x53D8;&#x91CF; <pre><code>a = 123
+def fn():
+  global a     # &#x58F0;&#x660E;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;
+  a = 456
+  print(a)
+fn()
+print(a)
+</code></pre>nonlocal&#xFF1A;&#x4E0D;&#x662F;&#x5C40;&#x90E8;&#x4E5F;&#x4E0D;&#x662F;&#x5168;&#x5C40;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;
+&#xFF08;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x4E0A;&#x5C42;&#x53D8;&#x91CF;&#xFF09;<pre><code>a = 123
+def fn1():
+  a = 456
+  def fn2():
+      nonlocal a     # &#x4E0D;&#x662F;&#x5C40;&#x90E8;
+      a = 789
+      print(a)
+  fn2()
+  print(a)
+fn1()
+print(a)
+</code></pre><h2 id="&#x4F5C;&#x7528;&#x57DF;">&#x4F5C;&#x7528;&#x57DF;</h2>
+</li>
+<li>&#x547D;&#x540D;&#x7A7A;&#x95F4;</li>
+<li>python&#x7684;&#x56DB;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;LEGB</li>
+<li>&#x4F5C;&#x7528;&#x57DF;&#x641C;&#x7D22;&#x987A;&#x5E8F;:python&#x4F5C;&#x7528;&#x57DF;&#x641C;&#x7D22;&#x987A;&#x5E8F;&#x9075;&#x5FAA;LEGB&#x89C4;&#x5219;<h2 id="&#x95ED;&#x5305;&#x51FD;&#x6570;">&#x95ED;&#x5305;&#x51FD;&#x6570;</h2>
+&#x5728;&#x4E00;&#x4E9B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x53EF;&#x4EE5;&#xFF08;&#x5D4C;&#x5957;&#xFF09;&#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x5F15;&#x7528;&#x4E86;&#x5916;&#x90E8;&#x7684;&#x51FD;&#x6570;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x95ED;&#x5305;&#x3002;&#x95ED;&#x5305;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E0E;&#x4E00;&#x7EC4;&#x201C;&#x79C1;&#x6709;&#x201D;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x521B;&#x5EFA;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x3002;&#x5728;&#x7ED9;&#x5B9A;&#x51FD;&#x6570;&#x88AB;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x80FD;&#x591F;&#x4FDD;&#x6301;&#x5176;&#x6301;&#x4E45;&#x6027;&#x3002;<h2 id="&#x9012;&#x5F52;&#x51FD;&#x6570;">&#x9012;&#x5F52;&#x51FD;&#x6570;</h2>
+&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5728;&#x5185;&#x90E8;&#x4E0D;&#x8C03;&#x7528;&#x5176;&#x5B83;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x662F;&#x81EA;&#x5DF1;&#x672C;&#x8EAB;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x9012;&#x5F52;&#x51FD;&#x6570;&#x3002;<h2 id="&#x88C5;&#x9970;&#x5668;">&#x88C5;&#x9970;&#x5668;</h2>
+<h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3>
+</li>
+<li>&#x88C5;&#x9970;&#x5668;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x7ED9;&#x67D0;&#x4E2A;&#x7A0B;&#x5E8F;&#x589E;&#x52A0;&#x529F;&#x80FD;<h3 id="&#x4F7F;&#x7528;&#x573A;&#x666F;">&#x4F7F;&#x7528;&#x573A;&#x666F;</h3>
+```
+&#x5B9A;&#x4E49;&#x516C;&#x5F0F;&#xFF1A;&lt;&#x51FD;&#x6570;+&#x5B9E;&#x53C2;&#x9AD8;&#x9636;&#x51FD;&#x6570;+&#x8FD4;&#x56DE;&#x503C;&#x9AD8;&#x9636;&#x51FD;&#x6570;+&#x95ED;&#x5305;&#x51FD;&#x6570;+&#x8BED;&#x6CD5;&#x7CD6;=&#x88C5;&#x9970;&#x5668;&gt;</li>
+</ul>
+<p>&#x6BD4;&#x5982;&#x8BE5;&#x7A0B;&#x5E8F;&#x5DF2;&#x7ECF;&#x4E0A;&#x7EBF;&#x6216;&#x8005;&#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4E45;&#x4E0D;&#x80FD;&#x5927;&#x6279;&#x91CF;&#x5730;&#x4FEE;&#x6539;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x6837;&#x662F;&#x4E0D;&#x79D1;&#x5B66;&#x4E5F;&#x662F;&#x4E0D;&#x73B0;&#x5B9E;&#x7684;&#x3002;</p>
+<pre><code>### &#x88C5;&#x9970;&#x5668;&#x4E09;&#x539F;&#x5219;
+1. &#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x88AB;&#x88C5;&#x9970;&#x51FD;&#x6570;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+2. &#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x88AB;&#x88C5;&#x9970;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;
+3. &#x6EE1;&#x8DB3;1&#x3001;2&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x7ED9;&#x7A0B;&#x5E8F;&#x589E;&#x52A0;&#x529F;&#x80FD;
+### &#x6DFB;&#x52A0;&#x65B0;&#x529F;&#x80FD;&#xFF1A;&#x8F93;&#x51FA;&#x603B;&#x65F6;&#x95F4;
+</code></pre><p>import time </p>
+<h1 id="def-fn---&#x6240;&#x6709;&#x7684;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x653E;&#x5728;&#x524D;&#x9762;-&#xFF1B;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x5199;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x6CA1;&#x6267;&#x884C;">def fn():   #&#x6240;&#x6709;&#x7684;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x653E;&#x5728;&#x524D;&#x9762; &#xFF1B;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x5199;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x6CA1;&#x6267;&#x884C;</h1>
+<h1 id="timesleep1">time.sleep(1)</h1>
+<h1 id="printend">print(&quot;end..&quot;)</h1>
+<h1 id="fn">fn()</h1>
+<h1 id="&#x65B9;&#x5F0F;&#x4E00;">&#x65B9;&#x5F0F;&#x4E00;</h1>
+<h1 id="def-fn2fn1-----&#x5C40;&#x90E8;&#x7684;fn1--&#x8C03;&#x7528;&#x5B8C;fn2&#x5E94;&#x8BE5;&#x6CE8;&#x91CA;&#x6389;&#x5185;&#x90E8;&#x7684;&#x53D8;&#x91CF;">def fn2(fn1):    # &#x5C40;&#x90E8;&#x7684;fn1  &#x8C03;&#x7528;&#x5B8C;fn2&#x5E94;&#x8BE5;&#x6CE8;&#x91CA;&#x6389;&#x5185;&#x90E8;&#x7684;&#x53D8;&#x91CF;</h1>
+<h1 id="def-newfn">def newFn():</h1>
+<h1 id="start--timetime">start = time.time()</h1>
+<h1 id="fn1-----&#x51FD;&#x6570;&#x7684;&#x95ED;&#x5305;&#xFF0C;&#x5185;&#x5C42;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x5916;&#x5C42;&#x53D8;&#x91CF;fn1">fn1()    # &#x51FD;&#x6570;&#x7684;&#x95ED;&#x5305;&#xFF0C;&#x5185;&#x5C42;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x5916;&#x5C42;&#x53D8;&#x91CF;fn1</h1>
+<h1 id="end--timetime">end = time.time()</h1>
+<h1 id="print&#x603B;&#x65F6;&#x95F4;&#xFF1A;send-start">print(&quot;&#x603B;&#x65F6;&#x95F4;&#xFF1A;%s&quot;%(end-start))</h1>
+<h1 id="return-newfn-----&#x8FD4;&#x56DE;newfn&#x7ED9;fn2&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6B64;&#x65F6;&#x7684;fn2&#x5C31;&#x662F;newfn&#x4E86;&#xFF1B;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x4E0D;&#x662F;&#x8FD4;&#x56DE;newfn">return newFn    # &#x8FD4;&#x56DE;newFn&#x7ED9;fn2&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6B64;&#x65F6;&#x7684;fn2&#x5C31;&#x662F;newFn&#x4E86;&#xFF1B;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x4E0D;&#x662F;&#x8FD4;&#x56DE;newFn()</h1>
+<h1 id="fn--fn2fn-----&#x5F00;&#x59CB;&#x7684;fn&#x662F;&#x5168;&#x5C40;&#x7684;fn&#x4F5C;&#x4E3A;&#x5B9E;&#x53C2;&#x7ED9;fn2&#xFF0C;&#x6267;&#x884C;&#x5C06;newfn&#x7ED9;fn2&#xFF0C;&#x628A;&#x539F;&#x6765;&#x4E0A;&#x8FB9;&#x7684;fn&#x8986;&#x76D6;&#x4E86;&#x800C;&#x5B58;&#x50A8;&#x6210;&#x4E86;newfn&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;fn2&#x8D4B;&#x7ED9;&#x6B64;&#x523B;&#x7684;fn">fn = fn2(fn)    # &#x5F00;&#x59CB;&#x7684;fn&#x662F;&#x5168;&#x5C40;&#x7684;fn&#x4F5C;&#x4E3A;&#x5B9E;&#x53C2;&#x7ED9;fn2&#xFF0C;&#x6267;&#x884C;&#x5C06;newFn&#x7ED9;fn2&#xFF0C;&#x628A;&#x539F;&#x6765;&#x4E0A;&#x8FB9;&#x7684;fn&#x8986;&#x76D6;&#x4E86;&#x800C;&#x5B58;&#x50A8;&#x6210;&#x4E86;newFn&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;fn2&#x8D4B;&#x7ED9;&#x6B64;&#x523B;&#x7684;fn</h1>
+<h1 id="fn">fn()</h1>
+<pre><code>```
+# &#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x88C5;&#x9970;&#x5668;&#x8BED;&#x6CD5;
+# def fn2(fn1):
+#     def newFn():
+#         start = time.time()
+#         fn1()
+#         end = time.time()
+#         print(&quot;&#x603B;&#x65F6;&#x95F4;&#xFF1A;%s&quot;%(end-start))
+#     return newFn
+
+# @fn2
+# def fn():
+#     time.sleep(1)
+#     print(&quot;end..&quot;)
+
+# @fn2
+# def fn1():
+#     print(&quot;abc&quot;)
+
+# fn()
+# fn1()
+</code></pre><h3 id="&#x88C5;&#x9970;&#x5668;&#x7684;&#x4F20;&#x53C2;">&#x88C5;&#x9970;&#x5668;&#x7684;&#x4F20;&#x53C2;</h3>
+<h4 id="&#x539F;&#x51FD;&#x6570;&#x4F20;&#x53C2;">&#x539F;&#x51FD;&#x6570;&#x4F20;&#x53C2;</h4>
+<pre><code>def fn2(fn1):
+    def newFn(*args,**kwargs):
+        start = time.time()
+        fn1(*args,**kwargs)   # &#x89E3;&#x6784;&#x4E00;&#x4E0B;
+        end = time.time()
+        print(&quot;&#x603B;&#x65F6;&#x95F4;&#xFF1A;%s&quot;%(end-start))
+    return newFn
+
+@fn2
+def fn(name):
+    time.sleep(1)
+    print(&quot;my name is %s&quot;%name)
+
+fn(&quot;wss&quot;
+</code></pre><h4 id="&#x88C5;&#x9970;&#x5668;&#x4F20;&#x53C2;">&#x88C5;&#x9970;&#x5668;&#x4F20;&#x53C2;</h4>
+<pre><code> def fn2(funName):
+    def argsfn(fn):
+        def newFn(*args,**kwargs):
+            print(&quot;&#x8FD9;&#x662F;&#x88C5;&#x9970;(%s)&#x51FD;&#x6570;&quot;%funName)
+            start = time.time()
+            fn(*args,**kwargs)   # &#x63A5;&#x6536;&#x53C2;&#x6570;
+            end = time.time()
+            print(&quot;&#x603B;&#x65F6;&#x95F4;&#xFF1A;%s&quot;%(end-start))
+        return newFn
+    return argsfn
+
+@fn2(&apos;fn&#x51FD;&#x6570;&apos;)
+def fn(name):
+    time.sleep(1)
+    print(&quot;my name is %s&quot;%name)
+
+fn(&quot;wss&quot;)
+</code></pre><h3 id="&#x88C5;&#x9970;&#x5668;&#x5D4C;&#x5957;">&#x88C5;&#x9970;&#x5668;&#x5D4C;&#x5957;</h3>
+<pre><code>&quot;&quot;&quot;
+@fn2()
+@fn1()
+def fn():
+    pass
+&quot;&quot;&quot;
+
+# &#x5B9A;&#x4E49;@fn1&#x88C5;&#x9970;&#x5668;&#xFF1A;&#x8F93;&#x51FA;&#x88C5;&#x9970;&#x5668;&#x540D;&#x5B57;
+def fn1(funName1):
+    print(&quot;%s&#x5728;&#x6267;&#x884C;&#x88C5;&#x9970;&#x5668;&quot;%funName1)
+    def newFun(fn):
+        def newFun2(*args,**kwargs):
+            print(&quot;%s&#x5728;&#x8C03;&#x7528;&quot;%funName1)
+            fn(*args,**kwargs)
+        return newFun2
+    return newFun
+
+# @fn2&#x88C5;&#x9970;&#x5668;  &#x8F93;&#x51FA;&#x88C5;&#x9970;&#x5668;&#x7684;&#x540D;&#x5B57;
+def fn2(funName2):
+    print(&quot;%s&#x5728;&#x6267;&#x884C;&#x88C5;&#x9970;&#x5668;&quot; % funName2)
+    def newFun(fn):
+        def newFun2(*args,**kwargs):
+            print(&quot;%s&#x5728;&#x8C03;&#x7528;&quot;%funName2)
+            fn(*args,**kwargs)
+        return newFun2
+    return newFun
+
+@fn2(&quot;fun2&quot;)
+@fn1(&quot;fun1&quot;)
+def fn(name):
+    print(name)
+
+fn(&quot;wss&quot;)
+</code></pre><ul>
+<li>&#x4E86;&#x89E3;&#x88C5;&#x9970;&#x5668;&#x8FD0;&#x884C;&#x6D41;&#x7A0B;: &#x88C5;&#x9970;&#x5668;&#x6267;&#x884C;&#x662F;&#x6309;&#x7167;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x6267;&#x884C;<h3 id="&#x88C5;&#x9970;&#x5668;&#x9AD8;&#x7EA7;">&#x88C5;&#x9970;&#x5668;&#x9AD8;&#x7EA7;</h3>
+</li>
+<li>&#x7C7B;&#x88C5;&#x9970;&#x5668;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="流程控制.html" class="navigation navigation-prev " aria-label="Previous page: 第9节：流程控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="常用系统内建函数.html" class="navigation navigation-next " aria-label="Next page: 第11节：常用系统内建函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第10节：函数","level":"1.2.10","depth":2,"next":{"title":"第11节：常用系统内建函数","level":"1.2.11","depth":2,"path":"Python基础/常用系统内建函数.md","ref":"Python基础/常用系统内建函数.md","articles":[]},"previous":{"title":"第9节：流程控制","level":"1.2.9","depth":2,"path":"Python基础/流程控制.md","ref":"Python基础/流程控制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Python基础/函数.md","mtime":"2019-04-14T13:15:19.900Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T15:00:50.504Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
